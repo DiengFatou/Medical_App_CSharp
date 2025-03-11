@@ -1,0 +1,342 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\DELL\\source\\repos\\ProjetGroupe2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|C:\\Users\\DELL\\source\\repos\\ProjetGroupe2\\appgroupe2\\model\\bdrvmedicalcontexe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|solutionrelative:appgroupe2\\model\\bdrvmedicalcontexe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|c:\\users\\dell\\source\\repos\\projetgroupe2\\appgroupe2\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|solutionrelative:appgroupe2\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|C:\\Users\\DELL\\source\\repos\\ProjetGroupe2\\appgroupe2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|solutionrelative:appgroupe2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|C:\\Users\\DELL\\source\\repos\\ProjetGroupe2\\appgroupe2\\view\\frmpatient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|solutionrelative:appgroupe2\\view\\frmpatient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|C:\\Users\\DELL\\source\\repos\\ProjetGroupe2\\appgroupe2\\view\\frmagenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|solutionrelative:appgroupe2\\view\\frmagenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|C:\\Users\\DELL\\source\\repos\\ProjetGroupe2\\appgroupe2\\view\\frmrendezvous.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|solutionrelative:appgroupe2\\view\\frmrendezvous.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|C:\\Users\\DELL\\source\\repos\\ProjetGroupe2\\appgroupe2\\view\\frmmedecin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|solutionrelative:appgroupe2\\view\\frmmedecin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|C:\\Users\\DELL\\source\\repos\\ProjetGroupe2\\appgroupe2\\view\\frmmedecin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|solutionrelative:appgroupe2\\view\\frmmedecin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|C:\\Users\\DELL\\source\\repos\\ProjetGroupe2\\appgroupe2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|solutionrelative:appgroupe2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|C:\\Users\\DELL\\source\\repos\\ProjetGroupe2\\appgroupe2\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|solutionrelative:appgroupe2\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|C:\\Users\\DELL\\source\\repos\\ProjetGroupe2\\appgroupe2\\model\\medecin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|solutionrelative:appgroupe2\\model\\medecin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|C:\\Users\\DELL\\source\\repos\\ProjetGroupe2\\appgroupe2\\view\\frmpatient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|solutionrelative:appgroupe2\\view\\frmpatient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|C:\\Users\\DELL\\source\\repos\\ProjetGroupe2\\appgroupe2\\model\\agenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|solutionrelative:appgroupe2\\model\\agenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|C:\\Users\\DELL\\source\\repos\\ProjetGroupe2\\appgroupe2\\model\\rendezvous.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|solutionrelative:appgroupe2\\model\\rendezvous.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|C:\\Users\\DELL\\source\\repos\\ProjetGroupe2\\appgroupe2\\model\\soin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|solutionrelative:appgroupe2\\model\\soin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|C:\\Users\\DELL\\source\\repos\\ProjetGroupe2\\appgroupe2\\model\\secretaire.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|solutionrelative:appgroupe2\\model\\secretaire.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|C:\\Users\\DELL\\source\\repos\\ProjetGroupe2\\appgroupe2\\model\\utilisateur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|solutionrelative:appgroupe2\\model\\utilisateur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|C:\\Users\\DELL\\source\\repos\\ProjetGroupe2\\appgroupe2\\model\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|solutionrelative:appgroupe2\\model\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|C:\\Users\\DELL\\source\\repos\\ProjetGroupe2\\appgroupe2\\model\\personne.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|solutionrelative:appgroupe2\\model\\personne.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|C:\\Users\\DELL\\source\\repos\\ProjetGroupe2\\appgroupe2\\frmmdi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|solutionrelative:appgroupe2\\frmmdi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\ProjetGroupe2\\AppGroupe2\\App.config",
+              "RelativeDocumentMoniker": "AppGroupe2\\App.config",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\ProjetGroupe2\\AppGroupe2\\App.config*",
+              "RelativeToolTip": "AppGroupe2\\App.config*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-01-29T13:03:32.159Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\ProjetGroupe2\\AppGroupe2\\Program.cs",
+              "RelativeDocumentMoniker": "AppGroupe2\\Program.cs",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\ProjetGroupe2\\AppGroupe2\\Program.cs",
+              "RelativeToolTip": "AppGroupe2\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T12:30:58.044Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\ProjetGroupe2\\AppGroupe2\\Form1.cs",
+              "RelativeDocumentMoniker": "AppGroupe2\\Form1.cs",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\ProjetGroupe2\\AppGroupe2\\Form1.cs [Design]",
+              "RelativeToolTip": "AppGroupe2\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T20:07:43.676Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\ProjetGroupe2\\AppGroupe2\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "AppGroupe2\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\ProjetGroupe2\\AppGroupe2\\Form1.Designer.cs",
+              "RelativeToolTip": "AppGroupe2\\Form1.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T20:07:22.004Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "frmMedecin.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\ProjetGroupe2\\AppGroupe2\\View\\frmMedecin.cs",
+              "RelativeDocumentMoniker": "AppGroupe2\\View\\frmMedecin.cs",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\ProjetGroupe2\\AppGroupe2\\View\\frmMedecin.cs",
+              "RelativeToolTip": "AppGroupe2\\View\\frmMedecin.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAuwBwAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T19:51:40.546Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BdRvMedicalContexe.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\ProjetGroupe2\\AppGroupe2\\Model\\BdRvMedicalContexe.cs",
+              "RelativeDocumentMoniker": "AppGroupe2\\Model\\BdRvMedicalContexe.cs",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\ProjetGroupe2\\AppGroupe2\\Model\\BdRvMedicalContexe.cs",
+              "RelativeToolTip": "AppGroupe2\\Model\\BdRvMedicalContexe.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T19:05:47.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmPatient.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\ProjetGroupe2\\AppGroupe2\\View\\frmPatient.cs",
+              "RelativeDocumentMoniker": "AppGroupe2\\View\\frmPatient.cs",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\ProjetGroupe2\\AppGroupe2\\View\\frmPatient.cs",
+              "RelativeToolTip": "AppGroupe2\\View\\frmPatient.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAgwB8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T12:33:09.74Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "frmAgenda.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\ProjetGroupe2\\AppGroupe2\\View\\frmAgenda.cs",
+              "RelativeDocumentMoniker": "AppGroupe2\\View\\frmAgenda.cs",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\ProjetGroupe2\\AppGroupe2\\View\\frmAgenda.cs [Design]",
+              "RelativeToolTip": "AppGroupe2\\View\\frmAgenda.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T20:12:48.483Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "frmRendezVous.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\ProjetGroupe2\\AppGroupe2\\View\\frmRendezVous.cs",
+              "RelativeDocumentMoniker": "AppGroupe2\\View\\frmRendezVous.cs",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\ProjetGroupe2\\AppGroupe2\\View\\frmRendezVous.cs [Design]",
+              "RelativeToolTip": "AppGroupe2\\View\\frmRendezVous.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T20:10:55.461Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "frmMedecin.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\ProjetGroupe2\\AppGroupe2\\View\\frmMedecin.cs",
+              "RelativeDocumentMoniker": "AppGroupe2\\View\\frmMedecin.cs",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\ProjetGroupe2\\AppGroupe2\\View\\frmMedecin.cs [Design]",
+              "RelativeToolTip": "AppGroupe2\\View\\frmMedecin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T19:46:15.968Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Agenda.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\ProjetGroupe2\\AppGroupe2\\Model\\Agenda.cs",
+              "RelativeDocumentMoniker": "AppGroupe2\\Model\\Agenda.cs",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\ProjetGroupe2\\AppGroupe2\\Model\\Agenda.cs",
+              "RelativeToolTip": "AppGroupe2\\Model\\Agenda.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T18:58:00.425Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Soin.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\ProjetGroupe2\\AppGroupe2\\Model\\Soin.cs",
+              "RelativeDocumentMoniker": "AppGroupe2\\Model\\Soin.cs",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\ProjetGroupe2\\AppGroupe2\\Model\\Soin.cs",
+              "RelativeToolTip": "AppGroupe2\\Model\\Soin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T19:00:15.42Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Secretaire.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\ProjetGroupe2\\AppGroupe2\\Model\\Secretaire.cs",
+              "RelativeDocumentMoniker": "AppGroupe2\\Model\\Secretaire.cs",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\ProjetGroupe2\\AppGroupe2\\Model\\Secretaire.cs",
+              "RelativeToolTip": "AppGroupe2\\Model\\Secretaire.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T18:53:33.501Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Medecin.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\ProjetGroupe2\\AppGroupe2\\Model\\Medecin.cs",
+              "RelativeDocumentMoniker": "AppGroupe2\\Model\\Medecin.cs",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\ProjetGroupe2\\AppGroupe2\\Model\\Medecin.cs",
+              "RelativeToolTip": "AppGroupe2\\Model\\Medecin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T18:51:53.257Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RendezVous.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\ProjetGroupe2\\AppGroupe2\\Model\\RendezVous.cs",
+              "RelativeDocumentMoniker": "AppGroupe2\\Model\\RendezVous.cs",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\ProjetGroupe2\\AppGroupe2\\Model\\RendezVous.cs",
+              "RelativeToolTip": "AppGroupe2\\Model\\RendezVous.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T19:02:54.41Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "frmPatient.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\ProjetGroupe2\\AppGroupe2\\View\\frmPatient.cs",
+              "RelativeDocumentMoniker": "AppGroupe2\\View\\frmPatient.cs",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\ProjetGroupe2\\AppGroupe2\\View\\frmPatient.cs [Design]",
+              "RelativeToolTip": "AppGroupe2\\View\\frmPatient.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T11:42:30.822Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Utilisateur.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\ProjetGroupe2\\AppGroupe2\\Model\\Utilisateur.cs",
+              "RelativeDocumentMoniker": "AppGroupe2\\Model\\Utilisateur.cs",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\ProjetGroupe2\\AppGroupe2\\Model\\Utilisateur.cs",
+              "RelativeToolTip": "AppGroupe2\\Model\\Utilisateur.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T18:51:04.499Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Personne.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\ProjetGroupe2\\AppGroupe2\\Model\\Personne.cs",
+              "RelativeDocumentMoniker": "AppGroupe2\\Model\\Personne.cs",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\ProjetGroupe2\\AppGroupe2\\Model\\Personne.cs",
+              "RelativeToolTip": "AppGroupe2\\Model\\Personne.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T12:42:35.616Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Patient.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\ProjetGroupe2\\AppGroupe2\\Model\\Patient.cs",
+              "RelativeDocumentMoniker": "AppGroupe2\\Model\\Patient.cs",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\ProjetGroupe2\\AppGroupe2\\Model\\Patient.cs",
+              "RelativeToolTip": "AppGroupe2\\Model\\Patient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T12:42:26.776Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "frmMDI.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\ProjetGroupe2\\AppGroupe2\\frmMDI.cs",
+              "RelativeDocumentMoniker": "AppGroupe2\\frmMDI.cs",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\ProjetGroupe2\\AppGroupe2\\frmMDI.cs",
+              "RelativeToolTip": "AppGroupe2\\frmMDI.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAAADsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T11:38:25.567Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
