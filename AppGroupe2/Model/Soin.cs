@@ -17,7 +17,6 @@ namespace AppGroupe2.Model
         public int IdSoin { get; set; }
         [Required]
         public string Libelle { get; set; }
-        public virtual ICollection<RendezVous> rendezVous { get; set; }
 
     }
 }

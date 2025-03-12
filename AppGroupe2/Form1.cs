@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AppGroupe2.App_Code;
+using AppGroupe2.App_Start;
 
 namespace AppGroupe2
 {
@@ -48,10 +50,10 @@ namespace AppGroupe2
 
                 }
             }
-            else
-            {
-                lblMessage.Visible = false;
-            }
+            Utils.WriteLogSystem("connexion", "Connexion reussie");
+            GMailer.SendMail("dchifai8@gmail.com", "Connexion", "une connexion");
+            
+
         }
 
         private void Quitter_Click_1(object sender, EventArgs e)

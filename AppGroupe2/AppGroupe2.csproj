@@ -207,8 +207,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_Code\Utils.cs" />
-    <Compile Include="App_Start\GMailer.cs" />
+    <Compile Include="Helper\Utils.cs" />
+    <Compile Include="Migrations\202503121643426_NomDeTaMigration.cs" />
+    <Compile Include="Migrations\202503121643426_NomDeTaMigration.Designer.cs">
+      <DependentUpon>202503121643426_NomDeTaMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\GMailer.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -305,7 +309,6 @@
       <DependentUpon>rptTicketRv.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Service1Client.cs" />
     <Compile Include="View\frmAgenda.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -377,6 +380,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202503111316192_log.resx">
       <DependentUpon>202503111316192_log.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202503121643426_NomDeTaMigration.resx">
+      <DependentUpon>202503121643426_NomDeTaMigration.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -452,6 +458,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
+    <Content Include="Error\erreur.txt" />
     <Content Include="MetroFramework.txt" />
   </ItemGroup>
   <ItemGroup>

@@ -28,23 +28,54 @@ namespace AppGroupe2.View
 
 
         public object CurrentRow { get; private set; }
-        
+
 
         private void ResetForm()
         {
-            txtNomPrenom.Text=string.Empty;
+            txtNomPrenom.Text = string.Empty;
             txtAdresse.Text = string.Empty;
-            txtEmail.Text=string.Empty;
+            txtEmail.Text = string.Empty;
+
+            // Charger les groupes sanguins correctement
             cbbGroupeSanguin.DataSource = LoadCbbGroupesanguin();
             cbbGroupeSanguin.ValueMember = "Value";
             cbbGroupeSanguin.DisplayMember = "Text";
+
             txtPoid.Text = string.Empty;
             txtTaille.Text = string.Empty;
             txtTelephone.Text = string.Empty;
+            dateTimePicker1.Value = DateTime.Now;
 
-            dgPatient.DataSource = db.Patients.Select(a => new { a.IDU, a.NomPrenom, a.Adresse, a.Tel, a.Email, a.Poids, a.Taille, a.GroupeSanguin }).ToList();
+            dgPatient.DataSource = db.Patients
+     .Select(a => new
+     {
+         a.IDU,
+         a.NomPrenom,
+         a.Adresse,
+         a.Tel,
+         a.Email,
+         a.Poids,
+         a.Taille,
+         GroupeSanguin = a.GroupeSanguin.CodeGroupeSanguin,
+         DateNaissance = a.DateNaissance 
+     })
+     .AsEnumerable()
+     .Select(a => new
+     {
+         a.IDU,
+         a.NomPrenom,
+         a.Adresse,
+         a.Tel,
+         a.Email,
+         a.Poids,
+         a.Taille,
+         a.GroupeSanguin,
+         DateNaissance = a.DateNaissance.HasValue ? a.DateNaissance.Value.ToString("dd/MM/yyyy") : ""
+     })
+     .ToList();
+
+
             txtNomPrenom.Focus();
-
         }
 
         private void btnAjouter_Click(object sender, EventArgs e)
@@ -57,7 +88,7 @@ namespace AppGroupe2.View
             p.Poids = float.Parse(txtTaille.Text, CultureInfo.InvariantCulture);
             p.Taille = float.Parse(txtTaille.Text, CultureInfo.InvariantCulture);
             p.IdGroupeSanguin = int.Parse(cbbGroupeSanguin.SelectedValue.ToString());
-
+            p.DateNaissance = dateTimePicker1.Value;
             db.Patients.Add(p);
             db.SaveChanges();
             ResetForm();
@@ -97,7 +128,7 @@ namespace AppGroupe2.View
                 p.Email = txtEmail.Text;
                 p.Poids = float.Parse(txtTaille.Text);
                 p.IdGroupeSanguin = int.Parse(cbbGroupeSanguin.SelectedValue.ToString());
-
+                p.DateNaissance = dateTimePicker1.Value;
             db.SaveChanges();
                 ResetForm();
 
@@ -118,19 +149,22 @@ namespace AppGroupe2.View
         }
         private List<SelectListViewModel> LoadCbbGroupesanguin()
         {
-            var p = db.GroupeSanguins.ToList();
+            var groupes = db.GroupeSanguins.ToList();
             List<SelectListViewModel> liste = new List<SelectListViewModel>();
-            SelectListViewModel b = new SelectListViewModel();
-            b.Text = "Selection....";
-            b.Value = "";
-            liste.Add(b);
-            foreach (var c in p)
+
+            // Ajout de l'option par défaut
+            liste.Add(new SelectListViewModel { Text = "Sélectionnez...", Value = "" });
+
+            // Ajout des groupes sanguins à la liste
+            foreach (var groupe in groupes)
             {
-                SelectListViewModel a = new SelectListViewModel();
-                a.Text = c.CodeGroupeSanguin;
-                a.Value = c.IdGroupeSanguin.ToString();
-                liste.Add(a);
+                liste.Add(new SelectListViewModel
+                {
+                    Text = groupe.CodeGroupeSanguin,
+                    Value = groupe.IdGroupeSanguin.ToString()
+                });
             }
+
             return liste;
         }
 
@@ -154,7 +188,7 @@ namespace AppGroupe2.View
         private void btnRv_Click(object sender, EventArgs e)
         {
             frmRendezVous f = new frmRendezVous();
-            //f.idPatient = int.Parse(dgPatient.CurrentRow.Cells[0].Value.ToString());
+            f.idPatient = int.Parse(dgPatient.CurrentRow.Cells[0].Value.ToString());
 
             f.Show();
             this.Enabled = false;

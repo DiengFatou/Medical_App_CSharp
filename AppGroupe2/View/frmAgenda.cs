@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AppGroupe2.App_Code;
 using AppGroupe2.Model;
 
 namespace AppGroupe2.View
@@ -14,6 +15,8 @@ namespace AppGroupe2.View
     public partial class frmAgenda : Form
     {
         public int idMedcin;
+        Utils utils = new Utils();
+
         /// <summary>
         /// Formulaire pour la gestion des rendez-vous des médecins.
         /// Ce formulaire permet de gérer les rendez-vous planifiés dans l'agenda.
@@ -89,12 +92,16 @@ namespace AppGroupe2.View
                 db.SaveChanges();
 
                 // Reinitialiser le formulaire après ajout
-                ResetForm();
+              
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Une erreur s'est produite lors de l'ajout : " + ex.Message, "Erreur", 
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
+                utils.WriteDataError("frmAgenda-btnAjouter_Click", ex.ToString());
+            }finally
+            {
+                ResetForm();
             }
         }
         /// <summary>
@@ -102,7 +109,7 @@ namespace AppGroupe2.View
          /// </summary>
         private void ResetForm()
         {
-            dgAgenda.DataSource=db.Agenda.Where(a=>a.DatePlanifier>=DateTime.Now && a.IdMedecin==idMedcin).ToList();
+            dgAgenda.DataSource=db.Agenda.Where(a=>a.DatePlanifier>=DateTime.Now ).ToList();
 
             txtCreneau.Text = string.Empty;
             txtDateAgenda.Value = DateTime.Now;

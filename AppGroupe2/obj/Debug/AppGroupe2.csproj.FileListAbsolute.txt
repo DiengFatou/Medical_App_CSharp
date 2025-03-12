@@ -310,3 +310,4 @@ D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\System.Text.Encodings.Web.xml
 D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\System.Text.Json.xml
 D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\System.ValueTuple.xml
 D:\C#\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.Migrations.log.resources
+D:\C#\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.Migrations.NomDeTaMigration.resources

@@ -18,7 +18,7 @@ namespace AppGroupe2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmConnexion());
+            Application.Run(new frmConnexion ());
         }
     }
 }

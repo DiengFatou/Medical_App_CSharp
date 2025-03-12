@@ -143,5 +143,7 @@ namespace AppGroupe2.View
             db.SaveChanges();
             ResetForm();
         }
+
+     
     }
 }

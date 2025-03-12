@@ -35,6 +35,20 @@ namespace AppGroupe2.App_Code
                 WriteLogSystem(ex.ToString(), "WriteDataError");
             }
         }
+        /// <summary>
+        /// Rédiger le message d'erreur dans un fichier
+        /// </summary>
+        /// <param name="erreur">le message d'erreur</param>
+        /// <param name="libelle">le message d'erreur</param>
+
+        public static void WriteFileError(string erreur, string libelle)
+        {
+            using (EventLog eventLog = new EventLog("Application"))
+            {
+                eventLog.Source = "GestionRvMedical";
+                eventLog.WriteEntry(string.Format("date: {0}, libelle: {1}, desciption: {2}", DateTime.Now, libelle, erreur), EventLogEntryType.Information, 101, 1);
+            }
+        }
 
         /// <summary>
         /// Rédiger le message d'erreur dans un fichier

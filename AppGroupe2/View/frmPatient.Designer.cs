@@ -53,6 +53,8 @@
             this.txtRTel = new System.Windows.Forms.TextBox();
             this.txtREmail = new System.Windows.Forms.TextBox();
             this.btnRv = new System.Windows.Forms.Button();
+            this.txtDateNaissance = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgPatient)).BeginInit();
@@ -104,6 +106,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.dateTimePicker1);
+            this.groupBox1.Controls.Add(this.txtDateNaissance);
             this.groupBox1.Controls.Add(this.cbbGroupeSanguin);
             this.groupBox1.Controls.Add(this.txtTaille);
             this.groupBox1.Controls.Add(this.label7);
@@ -120,7 +124,7 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(25, 136);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(387, 598);
+            this.groupBox1.Size = new System.Drawing.Size(387, 672);
             this.groupBox1.TabIndex = 14;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ajouter un Patient";
@@ -305,6 +309,23 @@
             this.btnRv.UseVisualStyleBackColor = true;
             this.btnRv.Click += new System.EventHandler(this.btnRv_Click);
             // 
+            // txtDateNaissance
+            // 
+            this.txtDateNaissance.AutoSize = true;
+            this.txtDateNaissance.Location = new System.Drawing.Point(12, 599);
+            this.txtDateNaissance.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.txtDateNaissance.Name = "txtDateNaissance";
+            this.txtDateNaissance.Size = new System.Drawing.Size(45, 20);
+            this.txtDateNaissance.TabIndex = 29;
+            this.txtDateNaissance.Text = "Taille";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(17, 622);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(349, 26);
+            this.dateTimePicker1.TabIndex = 20;
+            // 
             // frmPatient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -362,5 +383,7 @@
         private System.Windows.Forms.TextBox txtRTel;
         private System.Windows.Forms.TextBox txtREmail;
         private System.Windows.Forms.Button btnRv;
+        private System.Windows.Forms.Label txtDateNaissance;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
