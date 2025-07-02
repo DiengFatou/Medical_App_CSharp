@@ -175,6 +175,19 @@ C:\Users\LBC\Downloads\Telegram Desktop\ProjetGroupe2\ProjetGroupe2\AppGroupe2\o
 C:\Users\LBC\Downloads\Telegram Desktop\ProjetGroupe2\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.exe
 C:\Users\LBC\Downloads\Telegram Desktop\ProjetGroupe2\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.pdb
 C:\Users\LBC\Downloads\Telegram Desktop\ProjetGroupe2\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.Migrations.NomDeLaMigration.resources
+D:\C#\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.csproj.AssemblyReference.cache
+D:\C#\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.frmConnexion.resources
+D:\C#\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.frmMDI.resources
+D:\C#\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.Migrations.InitialCreate.resources
+D:\C#\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.Migrations.FixModelChanges.resources
+D:\C#\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.Properties.Resources.resources
+D:\C#\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.View.frmAgenda.resources
+D:\C#\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.View.frmMedecin.resources
+D:\C#\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.View.frmPatient.resources
+D:\C#\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.View.frmPrintTicket.resources
+D:\C#\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.View.frmRendezVous.resources
+D:\C#\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.csproj.GenerateResource.cache
+D:\C#\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.csproj.CoreCompileInputs.cache
 D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\AppGroupe2.exe.config
 D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\AppGroupe2.exe
 D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\AppGroupe2.pdb
@@ -201,8 +214,13 @@ D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
 D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
 D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Configuration.Binder.dll
 D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Configuration.dll
+D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.dll
+D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Configuration.Json.dll
 D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.FileProviders.Physical.dll
+D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.FileSystemGlobbing.dll
 D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
 D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Logging.dll
 D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Options.dll
@@ -218,7 +236,10 @@ D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\System.IO.Pipelines.dll
 D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\System.Memory.dll
 D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\System.Numerics.Vectors.dll
 D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\System.Text.Encodings.Web.dll
+D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\System.Text.Json.dll
 D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\System.ValueTuple.dll
 D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\ZstdSharp.dll
 D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
 D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
@@ -251,8 +272,13 @@ D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Caching.Memory.xml
 D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Configuration.xml
 D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
 D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Configuration.Binder.xml
+D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.xml
+D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Configuration.Json.xml
 D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
 D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.xml
+D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.FileProviders.Physical.xml
+D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.FileSystemGlobbing.xml
 D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Logging.xml
 D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
 D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Options.xml
@@ -267,47 +293,266 @@ D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\System.IO.Pipelines.xml
 D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\System.Memory.xml
 D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\System.Numerics.Vectors.xml
 D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\System.Text.Encodings.Web.xml
+D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\System.Text.Json.xml
 D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\System.Threading.Tasks.Extensions.xml
-D:\C#\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.csproj.AssemblyReference.cache
-D:\C#\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.frmConnexion.resources
-D:\C#\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.frmMDI.resources
-D:\C#\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.Migrations.AjoutNouvelleTable.resources
-D:\C#\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.Migrations.InitialCreate.resources
-D:\C#\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.Migrations.AddCreneauTable.resources
-D:\C#\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.Migrations.MigrationNom.resources
-D:\C#\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.Migrations.MigrationNom1.resources
-D:\C#\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.Migrations.MigrationNom2.resources
-D:\C#\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.Migrations.MigrationSangin.resources
-D:\C#\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.Migrations.MigrationSangin1.resources
-D:\C#\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.Migrations.InitialCreate1.resources
-D:\C#\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.Properties.Resources.resources
-D:\C#\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.View.frmAgenda.resources
-D:\C#\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.View.frmMedecin.resources
-D:\C#\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.View.frmPatient.resources
-D:\C#\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.View.frmPrintTicket.resources
-D:\C#\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.View.frmRendezVous.resources
-D:\C#\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.csproj.GenerateResource.cache
-D:\C#\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.csproj.CoreCompileInputs.cache
+D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\System.ValueTuple.xml
 D:\C#\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.csproj.Up2Date
 D:\C#\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.exe
 D:\C#\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.pdb
-D:\C#\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.Migrations.UpdateBdRvMedical.resources
-D:\C#\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.Migrations.rv.resources
-D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.dll
-D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Configuration.Json.dll
-D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.dll
-D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.FileProviders.Physical.dll
-D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.FileSystemGlobbing.dll
-D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\System.Text.Encodings.Web.dll
-D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\System.Text.Json.dll
-D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\System.ValueTuple.dll
-D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.xml
-D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Configuration.Json.xml
-D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.xml
-D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.FileProviders.Physical.xml
-D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.FileSystemGlobbing.xml
-D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\System.Text.Encodings.Web.xml
-D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\System.Text.Json.xml
-D:\C#\ProjetGroupe2\AppGroupe2\bin\Debug\System.ValueTuple.xml
-D:\C#\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.Migrations.log.resources
-D:\C#\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.Migrations.NomDeTaMigration.resources
+D:\Java\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.csproj.AssemblyReference.cache
+D:\Java\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.frmConnexion.resources
+D:\Java\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.frmMDI.resources
+D:\Java\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.Migrations.InitialCreate.resources
+D:\Java\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.Migrations.FixModelChanges.resources
+D:\Java\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.Properties.Resources.resources
+D:\Java\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.View.frmAgenda.resources
+D:\Java\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.View.frmMedecin.resources
+D:\Java\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.View.frmPatient.resources
+D:\Java\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.View.frmPrintTicket.resources
+D:\Java\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.View.frmRendezVous.resources
+D:\Java\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.csproj.GenerateResource.cache
+D:\Java\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.csproj.CoreCompileInputs.cache
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\AppGroupe2.exe.config
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\AppGroupe2.exe
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\AppGroupe2.pdb
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\BouncyCastle.Cryptography.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\CrystalDecisions.ReportSource.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\CrystalDecisions.Shared.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\CrystalDecisions.Windows.Forms.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\EntityFramework.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\EntityFramework.SqlServer.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\Google.Protobuf.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\K4os.Compression.LZ4.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\K4os.Hash.xxHash.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\MetierRvMedical.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\MetroFramework.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\MetroFramework.Fonts.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Bcl.HashCode.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.EntityFrameworkCore.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Configuration.Binder.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Configuration.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Configuration.Json.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.FileProviders.Physical.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.FileSystemGlobbing.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Logging.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Options.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Primitives.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\MySql.Data.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\MySql.Data.EntityFramework.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\System.Buffers.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\System.Collections.Immutable.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\System.ComponentModel.Annotations.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\System.Configuration.ConfigurationManager.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\System.IO.Pipelines.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\System.Memory.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\System.Numerics.Vectors.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\System.Text.Encodings.Web.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\System.Text.Json.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\System.ValueTuple.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\ZstdSharp.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\stdole.dll
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\MetierRvMedical.pdb
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\MetierRvMedical.dll.config
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\BouncyCastle.Cryptography.xml
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\EntityFramework.xml
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\EntityFramework.SqlServer.xml
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\Google.Protobuf.pdb
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\Google.Protobuf.xml
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\K4os.Compression.LZ4.xml
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\K4os.Hash.xxHash.xml
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Bcl.HashCode.xml
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.EntityFrameworkCore.xml
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.xml
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.EntityFrameworkCore.Relational.xml
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Caching.Abstractions.xml
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Caching.Memory.xml
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Configuration.xml
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Configuration.Binder.xml
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.xml
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Configuration.Json.xml
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.xml
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.FileProviders.Physical.xml
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.FileSystemGlobbing.xml
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Logging.xml
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Options.xml
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Primitives.xml
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\MySql.Data.xml
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\MySql.Data.EntityFramework.xml
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\System.Buffers.xml
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\System.Collections.Immutable.xml
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\System.Configuration.ConfigurationManager.xml
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\System.IO.Pipelines.xml
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\System.Memory.xml
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\System.Numerics.Vectors.xml
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\System.Text.Encodings.Web.xml
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\System.Text.Json.xml
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Java\ProjetGroupe2\AppGroupe2\bin\Debug\System.ValueTuple.xml
+D:\Java\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.csproj.Up2Date
+D:\Java\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.exe
+D:\Java\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.pdb
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\AppGroupe2.exe.config
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\AppGroupe2.exe
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\AppGroupe2.pdb
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\BouncyCastle.Cryptography.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\CrystalDecisions.ReportSource.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\CrystalDecisions.Shared.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\CrystalDecisions.Windows.Forms.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\EntityFramework.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\EntityFramework.SqlServer.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\Google.Protobuf.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\K4os.Compression.LZ4.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\K4os.Hash.xxHash.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\MetierRvMedical.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\MetroFramework.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\MetroFramework.Fonts.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Bcl.HashCode.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.EntityFrameworkCore.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Configuration.Binder.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Configuration.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Configuration.Json.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.FileProviders.Physical.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.FileSystemGlobbing.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Logging.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Options.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Primitives.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\MySql.Data.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\MySql.Data.EntityFramework.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\System.Buffers.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\System.Collections.Immutable.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\System.ComponentModel.Annotations.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\System.Configuration.ConfigurationManager.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\System.IO.Pipelines.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\System.Memory.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\System.Numerics.Vectors.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\System.Text.Encodings.Web.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\System.Text.Json.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\System.ValueTuple.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\ZstdSharp.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\stdole.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\MetierRvMedical.pdb
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\MetierRvMedical.dll.config
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\BouncyCastle.Cryptography.xml
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\EntityFramework.xml
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\EntityFramework.SqlServer.xml
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\Google.Protobuf.pdb
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\Google.Protobuf.xml
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\K4os.Compression.LZ4.xml
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\K4os.Hash.xxHash.xml
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Bcl.HashCode.xml
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.EntityFrameworkCore.xml
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.xml
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.EntityFrameworkCore.Relational.xml
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Caching.Abstractions.xml
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Caching.Memory.xml
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Configuration.xml
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Configuration.Binder.xml
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.xml
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Configuration.Json.xml
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.xml
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.FileProviders.Physical.xml
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.FileSystemGlobbing.xml
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Logging.xml
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Options.xml
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\Microsoft.Extensions.Primitives.xml
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\MySql.Data.xml
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\MySql.Data.EntityFramework.xml
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\System.Buffers.xml
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\System.Collections.Immutable.xml
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\System.Configuration.ConfigurationManager.xml
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\System.IO.Pipelines.xml
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\System.Memory.xml
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\System.Numerics.Vectors.xml
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\System.Text.Encodings.Web.xml
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\System.Text.Json.xml
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\bin\Debug\System.ValueTuple.xml
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.csproj.AssemblyReference.cache
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.frmConnexion.resources
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.frmMDI.resources
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.Migrations.InitialCreate.resources
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.Migrations.FixModelChanges.resources
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.Properties.Resources.resources
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.View.frmAgenda.resources
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.View.frmMedecin.resources
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.View.frmPatient.resources
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.View.frmPrintTicket.resources
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.View.frmRendezVous.resources
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.csproj.GenerateResource.cache
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.csproj.CoreCompileInputs.cache
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.csproj.Up2Date
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.exe
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\AppGroupe2\obj\Debug\AppGroupe2.pdb

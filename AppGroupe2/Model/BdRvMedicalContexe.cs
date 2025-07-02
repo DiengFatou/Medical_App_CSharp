@@ -36,6 +36,8 @@ namespace AppGroupe2.Model
         public DbSet<GroupeSanguin> GroupeSanguins {  get; set; }
         public DbSet<Creneau> Creneaux { get; set; }
         public DbSet<Td_Erreur> Td_Erreur { get; set; }
+        public DbSet<Admin> Admins { get; set; }
+        public DbSet<Role> Roles { get; set; }
 
 
     }

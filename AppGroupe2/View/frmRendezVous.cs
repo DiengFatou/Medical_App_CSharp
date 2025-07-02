@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web.Services.Description;
 using System.Windows.Forms;
+using AppGroupe2.App_Code;
 using AppGroupe2.Model;
-using BdRvMedicalContexe = AppGroupe2.Model.BdRvMedicalContexe;
+using MaterielRvMedical.Model;
+using AppGroupe2.View;
 
 namespace AppGroupe2.View
 {/// <summary>
@@ -16,13 +18,26 @@ namespace AppGroupe2.View
     {
         public int idPatient;
 
-        BdRvMedicalContexe db = new BdRvMedicalContexe();
+        AppGroupe2.ServiceMetier.Service1Client service;
+        Utils utils = new Utils();
 
         public frmRendezVous()
         {
             InitializeComponent();
-            InitialiserModePaiement();
-            InitialiserCout();
+            this.StartPosition = FormStartPosition.CenterScreen;
+            
+            try
+            {
+                service = new AppGroupe2.ServiceMetier.Service1Client();
+                InitialiserModePaiement();
+                InitialiserCout();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erreur de connexion au service: " + ex.Message, "Erreur de Connexion",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                utils.WriteDataError("frmRendezVous-Constructor", ex.ToString());
+            }
         }
 
         private void InitialiserModePaiement()
@@ -44,154 +59,258 @@ namespace AppGroupe2.View
             cbbCout.Items.Add("15000");
             cbbCout.SelectedIndex = 0;
         }
+        
         private void ResetForm()
         {
-            dgRendezvous.DataSource = db.RendezVous.Where(a => a.DateRv >= DateTime.Now && a.IdPatient == idPatient ).ToList();
+            try
+            {
+                if (service == null)
+                {
+                    MessageBox.Show("Service non disponible", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
 
-            txtNumeroRecu.Text = string.Empty;
-            txtReferencePaiement.Text = string.Empty;
-            txtCreneauSelectionne.Text = string.Empty;
-            dateTimePicker1.Value = DateTime.Now;
-            cbbSoin.SelectedValue = string.Empty;
-            cbbSoin.DataSource = LoadCbbSoin();
-            cbbSoin.ValueMember = "Value";
-            cbbSoin.DisplayMember = "Text";
-            cbbMedecin.SelectedValue = string.Empty;
-            cbbMedecin.DataSource = LoadCbbMedecin();
-            cbbMedecin.ValueMember = "Value";
-            cbbMedecin.DisplayMember = "Text";
+                // Charger les rendez-vous du patient
+                var rendezVous = service.GetListRendezvous()
+                    .Where(a => a.DateRv >= DateTime.Now && a.IdPatient == idPatient).ToList();
+                dgRendezvous.DataSource = rendezVous;
 
-            txtNumeroRecu.Focus();
+                // Réinitialiser les champs
+                txtNumeroRecu.Text = string.Empty;
+                txtReferencePaiement.Text = string.Empty;
+                txtCreneauSelectionne.Text = string.Empty;
+                dateTimePicker1.Value = DateTime.Now;
+                
+                // Charger les combobox
+                cbbSoin.DataSource = LoadCbbSoin();
+                cbbSoin.ValueMember = "Value";
+                cbbSoin.DisplayMember = "Text";
+                cbbSoin.SelectedIndex = 0;
+                
+                cbbMedecin.DataSource = LoadCbbMedecin();
+                cbbMedecin.ValueMember = "Value";
+                cbbMedecin.DisplayMember = "Text";
+                cbbMedecin.SelectedIndex = 0;
+
+                txtNumeroRecu.Focus();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erreur lors de la réinitialisation: " + ex.Message, "Erreur",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                utils.WriteDataError("frmRendezVous-ResetForm", ex.ToString());
+            }
         }
-        //private void ChargerSoins()
-        //{
-        //    try
-        //    {
-        //        var soins = db.Soins.Select(s => new { s.IdSoin, s.Libelle }).ToList();
-        //        if (soins.Count == 0)
-        //        {
-        //            MessageBox.Show("Aucun soin trouvé.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        //        }
-        //        else
-        //        {
-        //            cbbSoin.DataSource = soins;
-        //            cbbSoin.DisplayMember = "Libelle";
-        //            cbbSoin.ValueMember = "IdSoin";
-
-        //            if (cbbSoin.Items.Count > 0)
-        //            {
-        //                cbbSoin.SelectedIndex = 0;
-        //            }
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show("Erreur lors du chargement des soins : " + ex.Message, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
-        //    }
-        //}
-
-
-        //private void ChargerMedecins()
-        //{
-        //    try
-        //    {
-        //        var medecins = db.Medecins.Select(m => new { m.IdMedecin, m.NomPrenom }).ToList();
-        //        if (medecins.Count == 0)
-        //        {
-        //            MessageBox.Show("Aucun medecin trouvé.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        //        }
-        //        else
-        //        {
-        //            cbbMedecin.DataSource = medecins;
-        //            cbbMedecin.DisplayMember = "NomPrenom";
-        //            cbbMedecin.ValueMember = "IdMedecin";
-
-        //            if (cbbMedecin.Items.Count > 0)
-        //            {
-        //                cbbMedecin.SelectedIndex = 0; 
-        //            }
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show("Erreur lors du chargement des soins : " + ex.Message, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
-        //    }
-        //}
-
 
         private void ChargerCreneaux()
         {
-            var creneaux = db.Creneaux
-                             .Select(c => new { c.HeureDebut, c.HeureFin })
-                             .ToList();
-            dgCreneau.DataSource = creneaux;
+            try
+            {
+                if (service == null) return;
+                
+                var creneaux = service.GetListCreneau()
+                    .Select(c => new { c.HeureDebut, c.HeureFin })
+                    .ToList();
+                dgCreneau.DataSource = creneaux;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erreur chargement créneaux: " + ex.Message, "Erreur",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                utils.WriteDataError("frmRendezVous-ChargerCreneaux", ex.ToString());
+            }
         }
 
         private void btnValider_Click(object sender, EventArgs e)
         {
             try
             {
+                if (service == null)
+                {
+                    MessageBox.Show("Service non disponible", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                // Validation des champs obligatoires
                 if (string.IsNullOrWhiteSpace(txtReferencePaiement.Text) || string.IsNullOrWhiteSpace(txtNumeroRecu.Text))
                 {
-                    MessageBox.Show("Veuillez remplir tous les champs obligatoires.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Veuillez remplir tous les champs obligatoires.", "Erreur",
+                        MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
-                // Vérifiez si le medecin sélectionné a un ID valide
-                if (cbbMedecin.SelectedValue == null || string.IsNullOrWhiteSpace(cbbMedecin.SelectedValue.ToString()))
+                if (cbbMedecin.SelectedValue == null || string.IsNullOrWhiteSpace(cbbMedecin.SelectedValue.ToString()) || cbbMedecin.SelectedIndex == 0)
                 {
-                    MessageBox.Show("Veuillez sélectionner un medecin valide.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Veuillez sélectionner un médecin valide.", "Erreur",
+                        MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
-                // Ajout du rendez-vous avec créneau sélectionné
-                RendezVous rv = new RendezVous
+                if (cbbSoin.SelectedValue == null || string.IsNullOrWhiteSpace(cbbSoin.SelectedValue.ToString()) || cbbSoin.SelectedIndex == 0)
+                {
+                    MessageBox.Show("Veuillez sélectionner un soin valide.", "Erreur",
+                        MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                if (string.IsNullOrWhiteSpace(txtCreneauSelectionne.Text))
+                {
+                    MessageBox.Show("Veuillez sélectionner un créneau horaire.", "Erreur",
+                        MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                var rv = new MaterielRvMedical.Model.RendezVous
                 {
                     DateRv = dateTimePicker1.Value,
-                    ReferencePaiement = txtReferencePaiement.Text,
-                    NumeroRecu = txtNumeroRecu.Text,
-                    ModePaiement = cbbModePay.SelectedValue.ToString(),
-                    Cout = decimal.Parse(cbbCout.SelectedValue.ToString()),
+                    ReferencePaiement = txtReferencePaiement.Text.Trim(),
+                    NumeroRecu = txtNumeroRecu.Text.Trim(),
+                    ModePaiement = cbbModePay.SelectedItem.ToString(),
+                    Cout = decimal.Parse(cbbCout.SelectedItem.ToString()),
                     IdMedecin = int.Parse(cbbMedecin.SelectedValue.ToString()),
                     IdSoin = int.Parse(cbbSoin.SelectedValue.ToString()),
-                    Horaire = txtCreneauSelectionne.Text,
-
+                    Horaire = txtCreneauSelectionne.Text.Trim(),
+                    IdPatient = idPatient
                 };
 
-                db.RendezVous.Add(rv);
-                db.SaveChanges();
-                MessageBox.Show("Rendez-vous ajouté avec succès !", "Succès", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                ResetForm();
+                if (service.AddRendezvous(rv))
+                {
+                    MessageBox.Show("Rendez-vous ajouté avec succès !", "Succès",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    
+                    // Demander si l'utilisateur veut imprimer le reçu
+                    if (MessageBox.Show("Voulez-vous imprimer le reçu ?", "Impression du Reçu",
+                        MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    {
+                        ImprimerRecu(rv);
+                    }
+                    
+                    ResetForm();
+                }
+                else
+                {
+                    MessageBox.Show("Échec de l'ajout du rendez-vous", "Erreur",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Une erreur est survenue lors de l'ajout : " + ex.Message, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Erreur lors de l'ajout: " + ex.Message, "Erreur",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                utils.WriteDataError("frmRendezVous-btnValider_Click", ex.ToString());
+            }
+        }
+
+        private void ImprimerRecu(MaterielRvMedical.Model.RendezVous rendezVous)
+        {
+            try
+            {
+                // Récupérer l'ID du rendez-vous nouvellement créé
+                var rendezVousList = service.GetListRendezvous()
+                    .Where(r => r.NumeroRecu == rendezVous.NumeroRecu && r.IdPatient == rendezVous.IdPatient)
+                    .OrderByDescending(r => r.DateRv)
+                    .FirstOrDefault();
+
+                if (rendezVousList != null)
+                {
+                    frmPrintTicket frmRecu = new frmPrintTicket(rendezVousList.IdRv);
+                    frmRecu.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Impossible de récupérer les informations du rendez-vous pour l'impression.", "Erreur",
+                        MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erreur lors de l'impression du reçu: " + ex.Message, "Erreur",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                utils.WriteDataError("frmRendezVous-ImprimerRecu", ex.ToString());
             }
         }
 
         private void btnModifier_Click(object sender, EventArgs e)
         {
-            int? id = int.Parse(dgRendezvous.CurrentRow.Cells[0].Value.ToString());
-            var p = db.RendezVous.Find(id);
-            p.DateRv = dateTimePicker1.Value;
-            p.ReferencePaiement = txtReferencePaiement.Text;
-            p.NumeroRecu = txtNumeroRecu.Text;
-            p.ModePaiement = cbbModePay.SelectedValue.ToString();
-            p.Cout = decimal.Parse(cbbCout.SelectedValue.ToString());
-            p.IdMedecin = int.Parse(cbbMedecin.SelectedValue.ToString());
-            p.IdSoin = int.Parse(cbbSoin.SelectedValue.ToString());
-            p.Horaire = txtCreneauSelectionne.Text;
-            db.SaveChanges();
-            ResetForm();
+            try
+            {
+                if (dgRendezvous.CurrentRow == null)
+                {
+                    MessageBox.Show("Veuillez sélectionner un rendez-vous", "Erreur",
+                        MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                int id = int.Parse(dgRendezvous.CurrentRow.Cells[0].Value.ToString());
+                var rv = service.GetRendezvousById(id);
+
+                if (rv != null)
+                {
+                    rv.DateRv = dateTimePicker1.Value;
+                    rv.ReferencePaiement = txtReferencePaiement.Text;
+                    rv.NumeroRecu = txtNumeroRecu.Text;
+                    rv.ModePaiement = cbbModePay.SelectedItem.ToString();
+                    rv.Cout = decimal.Parse(cbbCout.SelectedItem.ToString());
+                    rv.IdMedecin = int.Parse(cbbMedecin.SelectedValue.ToString());
+                    rv.IdSoin = int.Parse(cbbSoin.SelectedValue.ToString());
+                    rv.Horaire = txtCreneauSelectionne.Text;
+
+                    if (service.UpdateRendezvous(rv))
+                    {
+                        MessageBox.Show("Rendez-vous modifié avec succès", "Succès",
+                            MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        ResetForm();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Échec de la modification", "Erreur",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erreur lors de la modification: " + ex.Message, "Erreur",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                utils.WriteDataError("frmRendezVous-btnModifier_Click", ex.ToString());
+            }
         }
 
         private void btnSupprimer_Click(object sender, EventArgs e)
         {
-            int? id = int.Parse(dgRendezvous.CurrentRow.Cells[0].Value.ToString());
-            var p = db.Patients.Find(id);
-            db.Patients.Remove(p);
-            db.SaveChanges();
-            ResetForm();
+            try
+            {
+                if (dgRendezvous.CurrentRow == null)
+                {
+                    MessageBox.Show("Veuillez sélectionner un rendez-vous", "Erreur",
+                        MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                int id = int.Parse(dgRendezvous.CurrentRow.Cells[0].Value.ToString());
+
+                if (MessageBox.Show("Confirmez-vous la suppression ?", "Confirmation",
+                    MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    if (service.DeleteRendezvous(id))
+                    {
+                        MessageBox.Show("Rendez-vous supprimé avec succès", "Succès",
+                            MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        ResetForm();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Échec de la suppression", "Erreur",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erreur lors de la suppression: " + ex.Message, "Erreur",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                utils.WriteDataError("frmRendezVous-btnSupprimer_Click", ex.ToString());
+            }
         }
 
         private void GenererNumeroRecu()
@@ -199,22 +318,25 @@ namespace AppGroupe2.View
             txtNumeroRecu.Text = "REC-" + DateTime.Now.ToString("yyyyMMddHHmmss");
         }
 
-
         private void dgCreneau_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0)
+            try
             {
-                object heureDebut = dgCreneau.Rows[e.RowIndex].Cells["HeureDebut"].Value;
-                object heureFin = dgCreneau.Rows[e.RowIndex].Cells["HeureFin"].Value;
+                if (e.RowIndex >= 0)
+                {
+                    var heureDebut = dgCreneau.Rows[e.RowIndex].Cells["HeureDebut"].Value?.ToString();
+                    var heureFin = dgCreneau.Rows[e.RowIndex].Cells["HeureFin"].Value?.ToString();
 
-                if (heureDebut != null && heureFin != null)
-                {
-                    txtCreneauSelectionne.Text = heureDebut.ToString() + " - " + heureFin.ToString();
+                    if (!string.IsNullOrEmpty(heureDebut) && !string.IsNullOrEmpty(heureFin))
+                    {
+                        txtCreneauSelectionne.Text = $"{heureDebut} - {heureFin}";
+                    }
                 }
-                else
-                {
-                    txtCreneauSelectionne.Text = "Créneau invalide";
-                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erreur sélection créneau: " + ex.Message, "Erreur",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -231,30 +353,36 @@ namespace AppGroupe2.View
 
         private void frmRendezVous_Load(object sender, EventArgs e)
         {
+            try
+            {
+                var p = service.GetPatientById(idPatient);
+                if (p != null)
+                {
+                    lblPatient.Text = $"N° Telephone: {p.Tel}, Nom Prenom: {p.NomPrenom}";
+                    lblIdPatient.Text = p.IDU.ToString();
+                    lblIdPatient.Visible = false;
+                }
 
-            var p = db.Patients.Find(idPatient);
-            lblPatient.Text = string.Format("N° Telephone: {0}, Nom Prenom:{1}", p.Tel, p.NomPrenom);
-            lblIdPatient.Text = p.IDU.ToString();
-            lblIdPatient.Visible = false;
-            ResetForm();
-           
-            ChargerCreneaux();
-            GenererNumeroRecu();
+                ResetForm();
+                ChargerCreneaux();
+                GenererNumeroRecu();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erreur au chargement: " + ex.Message, "Erreur",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                utils.WriteDataError("frmRendezVous-frmRendezVous_Load", ex.ToString());
+            }
         }
-
-
-
 
         private void btnGenerer_Click(object sender, EventArgs e)
         {
-          
             GenererNumeroRecu();
         }
 
         private void btnPatient_Click(object sender, EventArgs e)
         {
             frmPatient rv = new frmPatient();
-
             rv.Show();
         }
 
@@ -265,74 +393,83 @@ namespace AppGroupe2.View
         }
 
         private void btnFermer_Click(object sender, EventArgs e)
-        {      
+        {
             this.Close();
         }
 
+        private void btnImprimerRecu_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (dgRendezvous.CurrentRow == null)
+                {
+                    MessageBox.Show("Veuillez sélectionner un rendez-vous", "Erreur",
+                        MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
 
-
-
-
-
+                int id = int.Parse(dgRendezvous.CurrentRow.Cells[0].Value.ToString());
+                frmPrintTicket frmRecu = new frmPrintTicket(id);
+                frmRecu.Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erreur lors de l'impression du reçu: " + ex.Message, "Erreur",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                utils.WriteDataError("frmRendezVous-btnImprimerRecu_Click", ex.ToString());
+            }
+        }
 
         private List<SelectListViewModel> LoadCbbSoin()
         {
-            var rv = db.Soins.ToList();
-
-            if (rv == null || !rv.Any())
+            try
             {
-                MessageBox.Show("Erreur lors du chargement des médecins. Vérifiez la connexion à la base de données.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                var soins = service.GetListSoin();
+                var liste = new List<SelectListViewModel>
+                {
+                    new SelectListViewModel { Text = "Selection....", Value = "" }
+                };
+
+                liste.AddRange(soins.Select(s => new SelectListViewModel
+                {
+                    Text = s.Libelle,
+                    Value = s.IdSoin.ToString()
+                }));
+
+                return liste;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erreur chargement soins: " + ex.Message, "Erreur",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return new List<SelectListViewModel>();
             }
-
-            List<SelectListViewModel> liste = new List<SelectListViewModel>();
-            SelectListViewModel b = new SelectListViewModel();
-            b.Text = "Selection....";
-            b.Value = "";
-            liste.Add(b);
-            foreach (var c in rv)
-            {
-                SelectListViewModel a = new SelectListViewModel();
-
-                a.Text = c.Libelle;
-                a.Value = c.IdSoin.ToString();
-                liste.Add(a);
-            }
-            return liste;
         }
 
         private List<SelectListViewModel> LoadCbbMedecin()
         {
-            var rv = db.Medecins.ToList();
-
-            if (rv == null || !rv.Any())
+            try
             {
-                MessageBox.Show("Erreur lors du chargement des médecins. Vérifiez la connexion à la base de données.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                var medecins = service.GetListMedecin();
+                var liste = new List<SelectListViewModel>
+                {
+                    new SelectListViewModel { Text = "Selection....", Value = "" }
+                };
+
+                liste.AddRange(medecins.Select(m => new SelectListViewModel
+                {
+                    Text = m.NomPrenom,
+                    Value = m.IDU.ToString()
+                }));
+
+                return liste;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erreur chargement médecins: " + ex.Message, "Erreur",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return new List<SelectListViewModel>();
             }
-
-            List<SelectListViewModel> liste = new List<SelectListViewModel>();
-            SelectListViewModel b = new SelectListViewModel
-            {
-                Text = "Selection....",
-                Value = ""
-            };
-            liste.Add(b);
-            foreach (var c in rv)
-            {
-                SelectListViewModel a = new SelectListViewModel
-                {
-
-                Text = c.NomPrenom,
-                    Value = c.IdMedecin.ToString()
-                };
-                liste.Add(a);
-            }
-
-            return liste;
         }
-
-
-
     }
 }

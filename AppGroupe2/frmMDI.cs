@@ -14,6 +14,8 @@ namespace AppGroupe2
 {
     public partial class frmMDI : Form
     {
+        public string role;
+
         public frmMDI()
         {
             InitializeComponent();
@@ -41,15 +43,38 @@ namespace AppGroupe2
                 chform.Close();
             }
         }
-        private void frmMdiParent_Load(object sender, EventArgs e)
+
+
+        //private void frmMdi_Load(object sender, EventArgs e)
+        //{
+        //    Computer myComputer = new Computer();
+        //    this.Width = myComputer.Screen.Bounds.Width;
+        //    this.Height = myComputer.Screen.Bounds.Height;
+        //    this.Location = new Point(0, 0);
+        //}
+
+
+
+        private void frmMDI_Load(object sender, EventArgs e)
         {
             Computer myComputer = new Computer();
             this.Width = myComputer.Screen.Bounds.Width;
             this.Height = myComputer.Screen.Bounds.Height;
             this.Location = new Point(0, 0);
+            switch (role)
+            {
+                case "admin":
+                    couleurToolStripMenuItem.Visible = true;
+                    planifierToolStripMenuItem.Visible = false;
+                    break;
+                case "med":
+                case "sec":
+                    couleurToolStripMenuItem.Visible = false;
+                    planifierToolStripMenuItem.Visible = true;
+                    break;
+            }
         }
-
-        private void rougeToolStripMenuItem_Click(object sender, EventArgs e)
+        private void patientToolStripMenuItem_Click(object sender, EventArgs e)
         {
             fermer();
             frmPatient f = new frmPatient();
@@ -58,9 +83,16 @@ namespace AppGroupe2
             f.WindowState = FormWindowState.Maximized;
         }
 
-       
+        private void rendezVousToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fermer();
+            frmRendezVous f = new frmRendezVous();
+            f.MdiParent = this;
+            f.Show();
+            f.WindowState = FormWindowState.Maximized;
+        }
 
-        private void medecinToolStripMenuItem_Click(object sender, EventArgs e)
+        private void utilisateurToolStripMenuItem_Click(object sender, EventArgs e)
         {
             fermer();
             frmMedecin f = new frmMedecin();
@@ -69,20 +101,7 @@ namespace AppGroupe2
             f.WindowState = FormWindowState.Maximized;
         }
 
-       
-
-        private void frmMDI_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void rendezvousToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            fermer();
-            frmRendezVous f = new frmRendezVous();
-            f.MdiParent = this;
-            f.Show();
-            f.WindowState = FormWindowState.Maximized;
-        }
+        
     }
-}
+    }
+

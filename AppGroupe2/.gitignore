@@ -1,1 +1,9 @@
 ﻿.vs/
+<configuration>  
+<connectionStrings> 
+<add name="SchoolContext" 
+providerName="MySql.Data.MySqlClient" 
+connectionString="server=localhost;port=3306;database=SchoolDatabase;uid=r
+ oot;password=YourSuperSafePassword" /> 
+</connectionStrings> 
+</configuration> 

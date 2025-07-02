@@ -27,7 +27,7 @@ namespace AppGroupe2.Model
         public int IdMedecin { get; set; }
         [ForeignKey("IdMedecin")]
         public Medecin Medecin { get; set; }
-        public virtual ICollection<RendezVous> rendezVous   {get; set;}
+        public virtual ICollection<RendezVous> RendezVous   {get; set;}
 
     }
 }

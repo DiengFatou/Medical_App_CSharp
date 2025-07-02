@@ -3,195 +3,390 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Globalization;
+using System.Linq;
 using System.Windows.Forms;
-using AppGroupe2.Model;
+using AppGroupe2.App_Code;
+using MaterielRvMedical.Model;
+
 namespace AppGroupe2.View
 {
-    /// <summary>
-    /// Formulaire pour la gestion des patients.
-    /// Ce formulaire permet d'afficher, d'ajouter, de modifier et de supprimer des informations sur les patients.
-    /// </summary>
     public partial class frmPatient : Form
     {
-        BdRvMedicalContexe db = new BdRvMedicalContexe();
+        public int idPatient;
+        Utils utils = new Utils();
+        AppGroupe2.ServiceMetier.Service1Client service = new AppGroupe2.ServiceMetier.Service1Client();
+
         public frmPatient()
         {
             InitializeComponent();
-
             this.StartPosition = FormStartPosition.CenterScreen;
-
         }
-
-
-        public object CurrentRow { get; private set; }
-
 
         private void ResetForm()
         {
             txtNomPrenom.Text = string.Empty;
             txtAdresse.Text = string.Empty;
             txtEmail.Text = string.Empty;
-
-            // Charger les groupes sanguins correctement
-            cbbGroupeSanguin.DataSource = LoadCbbGroupesanguin();
-            cbbGroupeSanguin.ValueMember = "Value";
-            cbbGroupeSanguin.DisplayMember = "Text";
-
             txtPoid.Text = string.Empty;
             txtTaille.Text = string.Empty;
             txtTelephone.Text = string.Empty;
             dateTimePicker1.Value = DateTime.Now;
-
-            dgPatient.DataSource = db.Patients
-     .Select(a => new
-     {
-         a.IDU,
-         a.NomPrenom,
-         a.Adresse,
-         a.Tel,
-         a.Email,
-         a.Poids,
-         a.Taille,
-         GroupeSanguin = a.GroupeSanguin.CodeGroupeSanguin,
-         DateNaissance = a.DateNaissance 
-     })
-     .AsEnumerable()
-     .Select(a => new
-     {
-         a.IDU,
-         a.NomPrenom,
-         a.Adresse,
-         a.Tel,
-         a.Email,
-         a.Poids,
-         a.Taille,
-         a.GroupeSanguin,
-         DateNaissance = a.DateNaissance.HasValue ? a.DateNaissance.Value.ToString("dd/MM/yyyy") : ""
-     })
-     .ToList();
-
-
+            cbbGroupeSanguin.SelectedIndex = 0;
+            LoadPatients();
             txtNomPrenom.Focus();
+        }
+
+        private bool ValidatePatientData()
+        {
+            if (string.IsNullOrWhiteSpace(txtNomPrenom.Text) ||
+                string.IsNullOrWhiteSpace(txtAdresse.Text) ||
+                string.IsNullOrWhiteSpace(txtTelephone.Text))
+            {
+                MessageBox.Show("Les champs Nom/Prénom, Adresse et Téléphone sont obligatoires.", "Erreur",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+
+            if (!float.TryParse(txtPoid.Text, NumberStyles.Any, CultureInfo.InvariantCulture, out float poids) ||
+                !float.TryParse(txtTaille.Text, NumberStyles.Any, CultureInfo.InvariantCulture, out float taille))
+            {
+                MessageBox.Show("Poids et Taille doivent être des nombres valides.", "Erreur",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+
+            return true;
         }
 
         private void btnAjouter_Click(object sender, EventArgs e)
         {
-            Patient p = new Patient();
-            p.NomPrenom = txtNomPrenom.Text;
-            p.Adresse = txtAdresse.Text;
-            p.Tel=txtTelephone.Text;
-            p.Email=txtEmail.Text;
-            p.Poids = float.Parse(txtTaille.Text, CultureInfo.InvariantCulture);
-            p.Taille = float.Parse(txtTaille.Text, CultureInfo.InvariantCulture);
-            p.IdGroupeSanguin = int.Parse(cbbGroupeSanguin.SelectedValue.ToString());
-            p.DateNaissance = dateTimePicker1.Value;
-            db.Patients.Add(p);
-            db.SaveChanges();
-            ResetForm();
+            try
+            {
+                if (!ValidatePatientData())
+                    return;
 
+                var p = new Patient()
+                {
+                    NomPrenom = txtNomPrenom.Text,
+                    Adresse = txtAdresse.Text,
+                    Tel = txtTelephone.Text,
+                    Email = txtEmail.Text,
+                    Poids = float.Parse(txtPoid.Text, CultureInfo.InvariantCulture),
+                    Taille = float.Parse(txtTaille.Text, CultureInfo.InvariantCulture),
+                    IdGroupeSanguin = int.TryParse(cbbGroupeSanguin.SelectedValue?.ToString(), out int id) ? id : (int?)null,
+                    DateNaissance = dateTimePicker1.Value
+                };
 
+                if (service.AddPatient(p))
+                {
+                    MessageBox.Show("Patient ajouté avec succès.", "Succès",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ResetForm();
+                }
+                else
+                {
+                    MessageBox.Show("Échec de l'ajout du patient.", "Erreur",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erreur lors de l'ajout: {ex.Message}", "Erreur",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                utils.WriteDataError("frmPatient-btnAjouter_Click", ex.ToString());
+            }
         }
 
         private void frmPatient_Load(object sender, EventArgs e)
         {
-            ResetForm();
+            try
+            {
+                cbbGroupeSanguin.DataSource = LoadCbbGroupesanguin();
+                cbbGroupeSanguin.ValueMember = "Value";
+                cbbGroupeSanguin.DisplayMember = "Text";
+                ResetForm();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erreur lors du chargement: {ex.Message}", "Erreur",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                utils.WriteDataError("frmPatient-Load", ex.ToString());
+            }
+        }
+
+        private void LoadPatients()
+        {
+            try
+            {
+                var patients = service.GetListPatient()
+                    .OrderBy(p => p.NomPrenom)
+                    .ToList();
+
+                dgPatient.DataSource = patients.Select(p => new
+                {
+                    p.IDU,
+                    p.NomPrenom,
+                    p.Adresse,
+                    p.Tel,
+                    p.Email,
+                    p.Poids,
+                    p.Taille,
+                    GroupeSanguin = p.GroupeSanguin?.CodeGroupeSanguin ?? "",
+                    DateNaissance = p.DateNaissance?.ToString("dd/MM/yyyy") ?? ""
+                }).ToList();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erreur lors du chargement des patients: {ex.Message}", "Erreur",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnChoisir_Click(object sender, EventArgs e)
         {
-            int? id = int.Parse(dgPatient.CurrentRow.Cells[0].Value.ToString()); 
-            var p = db.Patients.Find(id);
-            if (p != null)
+            try
             {
+                if (dgPatient.CurrentRow == null)
+                {
+                    MessageBox.Show("Sélectionnez un patient.", "Erreur",
+                        MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                if (!int.TryParse(dgPatient.CurrentRow.Cells[0].Value.ToString(), out int id))
+                {
+                    MessageBox.Show("ID invalide.", "Erreur",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                var p = service.GetPatientById(id);
+                if (p == null)
+                {
+                    MessageBox.Show("Patient introuvable.", "Erreur",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
                 txtNomPrenom.Text = p.NomPrenom;
                 txtAdresse.Text = p.Adresse;
-                txtEmail.Text = p.Email;
                 txtTelephone.Text = p.Tel;
-                txtPoid.Text = p.Poids.ToString();
-                txtTaille.Text = p.Taille.ToString();
-                cbbGroupeSanguin.SelectedValue = p.IdGroupeSanguin;
+                txtEmail.Text = p.Email;
+                txtPoid.Text = p.Poids?.ToString(CultureInfo.InvariantCulture) ?? "";
+                txtTaille.Text = p.Taille?.ToString(CultureInfo.InvariantCulture) ?? "";
+                dateTimePicker1.Value = p.DateNaissance ?? DateTime.Now;
+                cbbGroupeSanguin.SelectedValue = p.IdGroupeSanguin?.ToString() ?? "";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erreur lors de la récupération: {ex.Message}", "Erreur",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                utils.WriteDataError("frmPatient-btnChoisir_Click", ex.ToString());
             }
         }
 
-
         private void btnModifier_Click(object sender, EventArgs e)
         {
-                int? id = int.Parse(dgPatient.CurrentRow.Cells[0].Value.ToString());
-                var p = db.Patients.Find(id);
+            try
+            {
+                if (dgPatient.CurrentRow == null)
+                {
+                    MessageBox.Show("Sélectionnez un patient avant de modifier.", "Erreur",
+                        MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                if (!ValidatePatientData())
+                    return;
+
+                if (!int.TryParse(dgPatient.CurrentRow.Cells[0].Value.ToString(), out int id))
+                {
+                    MessageBox.Show("ID invalide.", "Erreur",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                var p = service.GetPatientById(id);
+                if (p == null)
+                {
+                    MessageBox.Show("Patient introuvable.", "Erreur",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
                 p.NomPrenom = txtNomPrenom.Text;
                 p.Adresse = txtAdresse.Text;
                 p.Tel = txtTelephone.Text;
                 p.Email = txtEmail.Text;
-                p.Poids = float.Parse(txtTaille.Text);
-                p.IdGroupeSanguin = int.Parse(cbbGroupeSanguin.SelectedValue.ToString());
+                p.Poids = float.Parse(txtPoid.Text, CultureInfo.InvariantCulture);
+                p.Taille = float.Parse(txtTaille.Text, CultureInfo.InvariantCulture);
+                p.IdGroupeSanguin = int.TryParse(cbbGroupeSanguin.SelectedValue?.ToString(), out int idGroupe) ? idGroupe : (int?)null;
                 p.DateNaissance = dateTimePicker1.Value;
-            db.SaveChanges();
-                ResetForm();
 
+                if (service.UpdatePatient(p))
+                {
+                    MessageBox.Show("Patient modifié avec succès.", "Succès",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ResetForm();
+                }
+                else
+                {
+                    MessageBox.Show("Échec de la modification.", "Erreur",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
-        
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erreur lors de la modification: {ex.Message}", "Erreur",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                utils.WriteDataError("frmPatient-btnModifier_Click", ex.ToString());
+            }
+        }
 
         private void btnSupprimer_Click(object sender, EventArgs e)
         {
-            int? id = int.Parse(dgPatient.CurrentRow.Cells[3].Value.ToString());
-            if (id.HasValue)
+            try
             {
-                var p = db.Patients.Find(id);
-                db.Patients.Remove(p);
-                db.SaveChanges();
-                ResetForm();
+                if (dgPatient.CurrentRow == null)
+                {
+                    MessageBox.Show("Sélectionnez un patient avant de supprimer.", "Erreur",
+                        MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
 
+                if (!int.TryParse(dgPatient.CurrentRow.Cells[0].Value.ToString(), out int id))
+                {
+                    MessageBox.Show("ID invalide.", "Erreur",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                if (MessageBox.Show("Voulez-vous vraiment supprimer ce patient?", "Confirmation",
+                    MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    if (service.DeletePatient(id))
+                    {
+                        MessageBox.Show("Patient supprimé avec succès.", "Succès",
+                            MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        ResetForm();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Échec de la suppression.", "Erreur",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erreur lors de la suppression: {ex.Message}", "Erreur",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                utils.WriteDataError("frmPatient-btnSupprimer_Click", ex.ToString());
             }
         }
+
         private List<SelectListViewModel> LoadCbbGroupesanguin()
         {
-            var groupes = db.GroupeSanguins.ToList();
-            List<SelectListViewModel> liste = new List<SelectListViewModel>();
-
-            // Ajout de l'option par d�faut
-            liste.Add(new SelectListViewModel { Text = "S�lectionnez...", Value = "" });
-
-            // Ajout des groupes sanguins � la liste
-            foreach (var groupe in groupes)
+            try
             {
-                liste.Add(new SelectListViewModel
+                var groupes = service.GetAllGroupesSanguins();
+                var liste = new List<SelectListViewModel>
                 {
-                    Text = groupe.CodeGroupeSanguin,
-                    Value = groupe.IdGroupeSanguin.ToString()
-                });
-            }
+                    new SelectListViewModel { Text = "Sélectionnez...", Value = "" }
+                };
 
-            return liste;
+                liste.AddRange(groupes.Select(g => new SelectListViewModel
+                {
+                    Text = g.CodeGroupeSanguin,
+                    Value = g.IdGroupeSanguin.ToString()
+                }));
+
+                return liste;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erreur chargement groupes sanguins: " + ex.Message,
+                    "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                utils.WriteDataError("frmPatient-LoadCbbGroupesanguin", ex.ToString());
+                return new List<SelectListViewModel>();
+            }
         }
 
         private void btnRechercher_Click(object sender, EventArgs e)
         {
-            var liste = db.Patients.ToList();
-
-            if (!string.IsNullOrEmpty(txtREmail.Text))
+            try
             {
-                liste = liste.Where(a => a.Email.ToUpper() == txtREmail.Text.ToUpper()).ToList();
-            }
+                var patients = service.GetListPatient().AsQueryable();
 
-            if (!string.IsNullOrEmpty(txtRTel.Text))
+                if (!string.IsNullOrEmpty(txtREmail.Text))
+                {
+                    patients = patients.Where(p => p.Email != null &&
+                        p.Email.ToUpper().Contains(txtREmail.Text.ToUpper()));
+                }
+
+                if (!string.IsNullOrEmpty(txtRTel.Text))
+                {
+                    patients = patients.Where(p => p.Tel != null && p.Tel.Contains(txtRTel.Text));
+                }
+
+                dgPatient.DataSource = patients.Select(p => new
+                {
+                    p.IDU,
+                    p.NomPrenom,
+                    p.Adresse,
+                    p.Tel,
+                    p.Email,
+                    p.Poids,
+                    p.Taille,
+                    GroupeSanguin = p.GroupeSanguin != null ? p.GroupeSanguin.CodeGroupeSanguin : "",
+                    DateNaissance = p.DateNaissance.HasValue ? p.DateNaissance.Value.ToString("dd/MM/yyyy") : ""
+                }).ToList();
+            }
+            catch (Exception ex)
             {
-                liste = liste.Where(a => a.Tel.ToUpper() == txtRTel.Text.ToUpper()).ToList();
+                MessageBox.Show($"Erreur lors de la recherche: {ex.Message}", "Erreur",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                utils.WriteDataError("frmPatient-btnRechercher_Click", ex.ToString());
             }
-
-            dgPatient.DataSource = liste;
         }
+
 
         private void btnRv_Click(object sender, EventArgs e)
         {
-            frmRendezVous f = new frmRendezVous();
-            f.idPatient = int.Parse(dgPatient.CurrentRow.Cells[0].Value.ToString());
+            try
+            {
+                if (dgPatient.CurrentRow == null)
+                {
+                    MessageBox.Show("Sélectionnez un patient avant de créer un rendez-vous.", "Erreur",
+                        MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
 
-            f.Show();
-            this.Enabled = false;
+                if (!int.TryParse(dgPatient.CurrentRow.Cells[0].Value.ToString(), out int id))
+                {
+                    MessageBox.Show("ID invalide.", "Erreur",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                frmRendezVous f = new frmRendezVous();
+                f.idPatient = id;
+                f.Show();
+                this.Enabled = false;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erreur lors de l'ouverture du formulaire de rendez-vous: {ex.Message}", "Erreur",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                utils.WriteDataError("frmPatient-btnRv_Click", ex.ToString());
+            }
         }
+    }
+
+    public class SelectListViewModel
+    {
+        public string Text { get; set; }
+        public string Value { get; set; }
     }
 }

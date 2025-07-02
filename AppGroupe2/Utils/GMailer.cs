@@ -20,14 +20,7 @@ namespace AppGroupe2.App_Start
         public string Subject { get; set; }
         public string Body { get; set; }
         public bool IsHtml { get; set; }
-        //public class TempMail
-        //{
-        //    public string DestinataireMail { get; set; }
-        //    public string TitreMail { get; set; }
-        //    public string TextMail { get; set; }
-        //    public string Envoyer { get; set; }
-        //}
-        // Charger les paramètres SMTP depuis appsettings.json
+      
         static GMailer()
         {
             
@@ -38,13 +31,15 @@ namespace AppGroupe2.App_Start
 
         public void Send()
         {
-            SmtpClient smtp = new SmtpClient();
-            smtp.Host = GmailHost;
-            smtp.Port = GmailPort;
-            smtp.EnableSsl = GmailSSL;
-            smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
-            smtp.UseDefaultCredentials = true;
-            smtp.Credentials = new NetworkCredential(GmailUsername, GmailPassword);
+            SmtpClient smtp = new SmtpClient
+            {
+                Host = GmailHost,
+                Port = GmailPort,
+                EnableSsl = GmailSSL,
+                DeliveryMethod = SmtpDeliveryMethod.Network,
+                UseDefaultCredentials = true,
+                Credentials = new NetworkCredential(GmailUsername, GmailPassword)
+            };
             try
             {
                 using (var message = new MailMessage(GmailUsername, ToEmail))
@@ -57,9 +52,9 @@ namespace AppGroupe2.App_Start
 
             }
             catch (Exception ex)
-            { 
-           //to do
-                };
+            {
+                Console.WriteLine("Erreur lors de l'envoi de l'email : " + ex.Message);
+            };
             } 
         
 
@@ -70,11 +65,13 @@ namespace AppGroupe2.App_Start
                 GMailer.GmailUsername = "dchifai8@gmail.com";
                 GMailer.GmailPassword = "a7832140";
 
-                GMailer mailer = new GMailer();
-                mailer.ToEmail = destinataire;
-                mailer.Subject = subject;
-                mailer.Body = body;
-                mailer.IsHtml = true;
+                GMailer mailer = new GMailer
+                {
+                    ToEmail = destinataire,
+                    Subject = subject,
+                    Body = body,
+                    IsHtml = true
+                };
                 mailer.Send();
             }
             catch (Exception ex)

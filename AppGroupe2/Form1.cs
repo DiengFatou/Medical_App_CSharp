@@ -9,11 +9,16 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using AppGroupe2.App_Code;
 using AppGroupe2.App_Start;
+using AppGroupe2.Model;
+using AppGroupe2.Helper;
+using AppGroupe2.ServiceMetier;
 
 namespace AppGroupe2
 {
     public partial class frmConnexion : Form
     {
+        Service1Client service = new Service1Client();
+
         public frmConnexion()
         {
             InitializeComponent();
@@ -22,48 +27,49 @@ namespace AppGroupe2
 
        
 
-        private void frmConnexion_Load(object sender, EventArgs e)
-        {
-
-        }
-
-     
-
        
 
-       
-
-        private void Connecter_Click_1(object sender, EventArgs e)
+        private void btnConnecter_Click(object sender, EventArgs e)
         {
+            Utils utils = new Utils();
 
-            if (txtNom.Text == "login")
+            try
             {
-                if (txtMdp.Text == "Passer")
+                var leUser = service.GetUtilisateurByIdentifiant(txtIdentifiant.Text);
+
+                if (leUser != null && CryptString.VerifyMd5Hash(txtMdp.Text, leUser.MotDePasse))
                 {
                     frmMDI f = new frmMDI();
+                    f.role = leUser.Role.Code;
                     f.Show();
                     this.Hide();
+
+                    Utils.WriteLogSystem("connexion", "Connexion reussie"); 
+                    GMailer.SendMail("dchifai8@gmail.com", "Connexion", "une connexion");
                 }
                 else
                 {
                     lblMessage.Visible = true;
-
                 }
             }
-            Utils.WriteLogSystem("connexion", "Connexion reussie");
-            GMailer.SendMail("dchifai8@gmail.com", "Connexion", "une connexion");
-            
-
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erreur de connexion: " + ex.Message, "Erreur",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                utils.WriteDataError("frmConnexion-btnConnecter", ex.ToString());
+            }
         }
 
-        private void Quitter_Click_1(object sender, EventArgs e)
+        private void btnQuitter_Click(object sender, EventArgs e)
         {
+           
             this.Close();
 
         }
 
-        private void CheckBox1_CheckedChanged_1(object sender, EventArgs e)
+        private void CheckBox1_CheckedChanged(object sender, EventArgs e)
         {
+       
 
             if (CheckBox1.Checked)
             {
@@ -73,12 +79,8 @@ namespace AppGroupe2
             {
                 txtMdp.UseSystemPasswordChar = true;
             }
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+        
+    }
 
        
     }

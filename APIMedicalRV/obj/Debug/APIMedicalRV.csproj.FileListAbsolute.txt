@@ -1,0 +1,285 @@
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\APIMedicalRV.dll.config
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\APIMedicalRV.dll
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\APIMedicalRV.pdb
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\roslyn\csc.exe
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\roslyn\csc.exe.config
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\roslyn\csc.rsp
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\roslyn\csi.exe
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\roslyn\csi.exe.config
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\roslyn\csi.rsp
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\roslyn\Microsoft.Managed.Core.targets
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.AppContext.dll
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.Collections.Immutable.dll
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.Console.dll
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.Globalization.Calendars.dll
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.IO.Compression.dll
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.IO.FileSystem.dll
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.Net.Http.dll
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.Net.Sockets.dll
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.Reflection.Metadata.dll
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.ValueTuple.dll
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.Xml.XmlDocument.dll
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.Xml.XPath.dll
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\roslyn\vbc.exe
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\roslyn\vbc.exe.config
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\roslyn\vbc.rsp
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\roslyn\VBCSCompiler.exe
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\roslyn\VBCSCompiler.exe.config
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\Antlr3.Runtime.dll
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\Microsoft.Web.Infrastructure.dll
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\Newtonsoft.Json.dll
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\System.Net.Http.Formatting.dll
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\System.Web.Helpers.dll
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\System.Web.Http.dll
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\System.Web.Http.WebHost.dll
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\System.Web.Mvc.dll
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\System.Web.Optimization.dll
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\System.Web.Razor.dll
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\System.Web.WebPages.Deployment.dll
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\System.Web.WebPages.dll
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\System.Web.WebPages.Razor.dll
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\WebGrease.dll
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\Newtonsoft.Json.xml
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\System.Net.Http.Formatting.xml
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\System.Web.Helpers.xml
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\System.Web.Http.xml
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\System.Web.Http.WebHost.xml
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\System.Web.Mvc.xml
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\System.Web.Optimization.xml
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\System.Web.Razor.xml
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\System.Web.WebPages.xml
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\System.Web.WebPages.Deployment.xml
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\System.Web.WebPages.Razor.xml
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\Antlr3.Runtime.pdb
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\fr\System.Net.Http.Formatting.resources.dll
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\fr\System.Web.Helpers.resources.dll
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\fr\System.Web.Http.resources.dll
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\fr\System.Web.Http.WebHost.resources.dll
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\fr\System.Web.Mvc.resources.dll
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\fr\System.Web.Optimization.resources.dll
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\fr\System.Web.Razor.resources.dll
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\fr\System.Web.WebPages.resources.dll
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\fr\System.Web.WebPages.Deployment.resources.dll
+D:\C#\ProjetGroupe2\APIMedicalRV\bin\fr\System.Web.WebPages.Razor.resources.dll
+D:\C#\ProjetGroupe2\APIMedicalRV\obj\Debug\APIMedicalRV.csproj.AssemblyReference.cache
+D:\C#\ProjetGroupe2\APIMedicalRV\obj\Debug\APIMedicalRV.csproj.CoreCompileInputs.cache
+D:\C#\ProjetGroupe2\APIMedicalRV\obj\Debug\APIMedic.E65DA5CE.Up2Date
+D:\C#\ProjetGroupe2\APIMedicalRV\obj\Debug\APIMedicalRV.dll
+D:\C#\ProjetGroupe2\APIMedicalRV\obj\Debug\APIMedicalRV.pdb
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\APIMedicalRV.dll.config
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\APIMedicalRV.dll
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\APIMedicalRV.pdb
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\roslyn\csc.exe
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\roslyn\csc.exe.config
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\roslyn\csc.rsp
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\roslyn\csi.exe
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\roslyn\csi.exe.config
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\roslyn\csi.rsp
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.AppContext.dll
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.Collections.Immutable.dll
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.Console.dll
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.Globalization.Calendars.dll
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.IO.Compression.dll
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.IO.FileSystem.dll
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.Net.Http.dll
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.Net.Sockets.dll
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.Reflection.Metadata.dll
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.ValueTuple.dll
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.Xml.XPath.dll
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\roslyn\vbc.exe
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\roslyn\vbc.exe.config
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\roslyn\vbc.rsp
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\roslyn\VBCSCompiler.exe
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\roslyn\VBCSCompiler.exe.config
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\Antlr3.Runtime.dll
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\Microsoft.Web.Infrastructure.dll
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\Newtonsoft.Json.dll
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\System.Net.Http.Formatting.dll
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\System.Web.Helpers.dll
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\System.Web.Http.dll
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\System.Web.Http.WebHost.dll
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\System.Web.Mvc.dll
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\System.Web.Optimization.dll
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\System.Web.Razor.dll
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\System.Web.WebPages.Deployment.dll
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\System.Web.WebPages.dll
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\System.Web.WebPages.Razor.dll
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\WebGrease.dll
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\Newtonsoft.Json.xml
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\System.Net.Http.Formatting.xml
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\System.Web.Helpers.xml
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\System.Web.Http.xml
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\System.Web.Http.WebHost.xml
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\System.Web.Mvc.xml
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\System.Web.Optimization.xml
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\System.Web.Razor.xml
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\System.Web.WebPages.xml
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\System.Web.WebPages.Deployment.xml
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\System.Web.WebPages.Razor.xml
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\Antlr3.Runtime.pdb
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\fr\System.Net.Http.Formatting.resources.dll
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\fr\System.Web.Helpers.resources.dll
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\fr\System.Web.Http.resources.dll
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\fr\System.Web.Http.WebHost.resources.dll
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\fr\System.Web.Mvc.resources.dll
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\fr\System.Web.Optimization.resources.dll
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\fr\System.Web.Razor.resources.dll
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\fr\System.Web.WebPages.resources.dll
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\fr\System.Web.WebPages.Deployment.resources.dll
+D:\Java\ProjetGroupe2\APIMedicalRV\bin\fr\System.Web.WebPages.Razor.resources.dll
+D:\Java\ProjetGroupe2\APIMedicalRV\obj\Debug\APIMedicalRV.csproj.AssemblyReference.cache
+D:\Java\ProjetGroupe2\APIMedicalRV\obj\Debug\APIMedicalRV.csproj.CoreCompileInputs.cache
+D:\Java\ProjetGroupe2\APIMedicalRV\obj\Debug\APIMedic.E65DA5CE.Up2Date
+D:\Java\ProjetGroupe2\APIMedicalRV\obj\Debug\APIMedicalRV.dll
+D:\Java\ProjetGroupe2\APIMedicalRV\obj\Debug\APIMedicalRV.pdb
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\APIMedicalRV.dll.config
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\APIMedicalRV.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\APIMedicalRV.pdb
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\roslyn\csc.exe
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\roslyn\csc.exe.config
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\roslyn\csc.rsp
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\roslyn\csi.exe
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\roslyn\csi.exe.config
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\roslyn\csi.rsp
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.AppContext.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.Collections.Immutable.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.Console.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.Globalization.Calendars.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.IO.Compression.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.IO.FileSystem.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.Net.Http.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.Net.Sockets.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.Reflection.Metadata.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.ValueTuple.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.Xml.XPath.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\roslyn\vbc.exe
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\roslyn\vbc.exe.config
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\roslyn\vbc.rsp
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\roslyn\VBCSCompiler.exe
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\roslyn\VBCSCompiler.exe.config
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\Antlr3.Runtime.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\Microsoft.Web.Infrastructure.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\Newtonsoft.Json.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\System.Net.Http.Formatting.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\System.Web.Helpers.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\System.Web.Http.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\System.Web.Http.WebHost.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\System.Web.Mvc.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\System.Web.Optimization.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\System.Web.Razor.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\System.Web.WebPages.Deployment.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\System.Web.WebPages.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\System.Web.WebPages.Razor.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\WebGrease.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\Newtonsoft.Json.xml
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\System.Net.Http.Formatting.xml
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\System.Web.Helpers.xml
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\System.Web.Http.xml
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\System.Web.Http.WebHost.xml
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\System.Web.Mvc.xml
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\System.Web.Optimization.xml
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\System.Web.Razor.xml
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\System.Web.WebPages.xml
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\System.Web.WebPages.Deployment.xml
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\System.Web.WebPages.Razor.xml
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\Antlr3.Runtime.pdb
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\fr\System.Net.Http.Formatting.resources.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\fr\System.Web.Helpers.resources.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\fr\System.Web.Http.resources.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\fr\System.Web.Http.WebHost.resources.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\fr\System.Web.Mvc.resources.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\fr\System.Web.Optimization.resources.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\fr\System.Web.Razor.resources.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\fr\System.Web.WebPages.resources.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\fr\System.Web.WebPages.Deployment.resources.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\bin\fr\System.Web.WebPages.Razor.resources.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\obj\Debug\APIMedicalRV.csproj.AssemblyReference.cache
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\obj\Debug\APIMedicalRV.csproj.CoreCompileInputs.cache
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\obj\Debug\APIMedic.E65DA5CE.Up2Date
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\obj\Debug\APIMedicalRV.dll
+D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\APIMedicalRV\obj\Debug\APIMedicalRV.pdb

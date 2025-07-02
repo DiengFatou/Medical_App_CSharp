@@ -60,6 +60,6 @@
         #endregion
 
         private CrystalDecisions.Windows.Forms.CrystalReportViewer CrystalReportView1;
-        private System.Windows.Forms.Button btnFermer;
+        //private System.Windows.Forms.Button btnFermer;
     }
 }

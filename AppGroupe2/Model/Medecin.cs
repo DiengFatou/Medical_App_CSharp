@@ -17,7 +17,7 @@ namespace AppGroupe2.Model
     public class Medecin: Utilisateur
     {
         [Key]
-        public string IdMedecin { get; set; }
+        public int IdMedecin { get; set; }
     
         public int? IdSpecialite { get; set; }
         [ForeignKey("IdSpecialite")]

@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using AppGroupe2.App_Code;
 using AppGroupe2.Model;
+using MaterielRvMedical.Model;
 
 namespace AppGroupe2.View
 {
@@ -33,7 +34,8 @@ namespace AppGroupe2.View
             this.StartPosition = FormStartPosition.CenterScreen;
 
         }
-        BdRvMedicalContexe db = new BdRvMedicalContexe();
+        //BdRvMedicalContexe db = new BdRvMedicalContexe();
+        AppGroupe2.ServiceMetier.Service1Client service = new AppGroupe2.ServiceMetier.Service1Client();
         private void btnFermer_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -41,12 +43,32 @@ namespace AppGroupe2.View
 
         private void frmAgenda_Load(object sender, EventArgs e)
         {
-            var m =db.Medecins.Find(idMedcin);
+            var m = service.GetMedecinById(idMedcin);
             lblMedecin.Text = string.Format("N Ordre: {0}, Nom Prenom:{1}", m.NumeroOrdre, m.NomPrenom);
             lblIdMedecin.Text = m.IDU.ToString();
             lblIdMedecin.Visible = false;
+
+            try
+            {
+                var agendas = service.GetListAgenda()
+                                  .Where(a => a.IdMedecin == idMedcin &&
+                                            a.DatePlanifier >= DateTime.Now.Date)
+                                  .OrderBy(a => a.DatePlanifier)
+                                  .ThenBy(a => a.HeureDebut)
+                                  .ToList();
+
+                dgAgenda.DataSource = agendas;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erreur lors du chargement: {ex.Message}", "Erreur",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                utils.WriteDataError("frmAgenda-LoadAgendas", ex.ToString());
+            }
             ResetForm();
+
         }
+        
         /// <summary>
         /// Cette méthode permet d'ajouter un nouvel agenda dans la base de données
         /// Elle vérifie que les champs sont remplis et que les données sont valides avant l'ajout.
@@ -75,7 +97,7 @@ namespace AppGroupe2.View
                 }
 
                 // Créer un nouvel objet Agenda
-                Agenda a = new Agenda
+                MaterielRvMedical.Model.Agenda a = new MaterielRvMedical.Model.Agenda()
                 {
                     Creneau = creneau,
                     HeureFin = txtHeureFin.Text,
@@ -87,9 +109,7 @@ namespace AppGroupe2.View
                     Lieu = txtLieu.Text
                 };
 
-                // Ajouter a la base de données
-                db.Agenda.Add(a);
-                db.SaveChanges();
+                service.AddAgenda(a);
 
                 // Reinitialiser le formulaire après ajout
               
@@ -109,7 +129,7 @@ namespace AppGroupe2.View
          /// </summary>
         private void ResetForm()
         {
-            dgAgenda.DataSource=db.Agenda.Where(a=>a.DatePlanifier>=DateTime.Now ).ToList();
+            dgAgenda.DataSource=service.GetListAgenda().Where(a=>a.DatePlanifier>=DateTime.Now ).ToList();
 
             txtCreneau.Text = string.Empty;
             txtDateAgenda.Value = DateTime.Now;
@@ -124,11 +144,12 @@ namespace AppGroupe2.View
 
         private void btnModifier_Click(object sender, EventArgs e)
         {
+ 
             try
             {
                 if (dgAgenda.CurrentRow == null)
                 {
-                    MessageBox.Show("Sélectionnez un rendez-vous avant de modifier.", "Erreur", 
+                    MessageBox.Show("Sélectionnez un rendez-vous avant de modifier.", "Erreur",
                         MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
@@ -136,47 +157,66 @@ namespace AppGroupe2.View
                 int id;
                 if (!int.TryParse(dgAgenda.CurrentRow.Cells[0].Value.ToString(), out id))
                 {
-
-                    MessageBox.Show("ID invalide.", "Erreur", 
+                    MessageBox.Show("ID invalide.", "Erreur",
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
-                var a = db.Agenda.Find(id);
+                // Récupérer l'agenda existant
+                var a = service.GetAgendaById(id);
                 if (a == null)
                 {
-                    MessageBox.Show("Rendez-vous introuvable.", "Erreur", 
+                    MessageBox.Show("Rendez-vous introuvable.", "Erreur",
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
+                // Validation des heures
+                if (!TimeSpan.TryParse(txtHeureDebut.Text, out _) || !TimeSpan.TryParse(txtHeureFin.Text, out _))
+                {
+                    MessageBox.Show("Format d'heure invalide (utilisez HH:MM).", "Erreur",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                // Mise à jour des propriétés
                 a.Creneau = int.Parse(txtCreneau.Text);
                 a.HeureFin = txtHeureFin.Text;
                 a.HeureDebut = txtHeureDebut.Text;
-                a.IdMedecin = idMedcin;
                 a.DatePlanifier = txtDateAgenda.Value;
-                a.Statut = "Brouillon";
                 a.Titre = txtTitre.Text;
                 a.Lieu = txtLieu.Text;
 
-                db.SaveChanges();
-                ResetForm();
+                if (service.UpdateAgenda(a))
+                {
+                    MessageBox.Show("Rendez-vous modifié avec succès.", "Succès",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ResetForm();
+                }
+                else
+                {
+                    MessageBox.Show("Échec de la modification.", "Erreur",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Une erreur s'est produite : " + ex.Message, "Erreur", 
+                MessageBox.Show($"Erreur lors de la modification: {ex.Message}", "Erreur",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
+                utils.WriteDataError("frmAgenda-btnModifier_Click", ex.ToString());
             }
+        
         }
 
 
         private void btnChoisir_Click(object sender, EventArgs e)
         {
+          
             try
             {
                 if (dgAgenda.CurrentRow == null)
                 {
-                    MessageBox.Show("Sélectionnez un rendez-vous.", "Erreur", 
+                    MessageBox.Show("Sélectionnez un rendez-vous.", "Erreur",
                         MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
@@ -184,12 +224,13 @@ namespace AppGroupe2.View
                 int id;
                 if (!int.TryParse(dgAgenda.CurrentRow.Cells[0].Value.ToString(), out id))
                 {
-                    MessageBox.Show("ID invalide.", "Erreur", 
+                    MessageBox.Show("ID invalide.", "Erreur",
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
-                var a = db.Agenda.Find(id);
+                // Récupérer l'agenda existant depuis le service
+                var a = service.GetAgendaById(id);
                 if (a == null)
                 {
                     MessageBox.Show("Rendez-vous introuvable.", "Erreur",
@@ -201,15 +242,17 @@ namespace AppGroupe2.View
                 txtHeureFin.Text = a.HeureFin;
                 txtHeureDebut.Text = a.HeureDebut;
                 idMedcin = a.IdMedecin;
-                txtDateAgenda.Text = a.DatePlanifier.HasValue ? a.DatePlanifier.Value.ToString("yyyy-MM-dd") : "";
+                txtDateAgenda.Value = a.DatePlanifier ?? DateTime.Now;
                 txtTitre.Text = a.Titre;
                 txtLieu.Text = a.Lieu;
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Une erreur s'est produite : " + ex.Message, "Erreur", 
+                MessageBox.Show($"Erreur lors de la récupération: {ex.Message}", "Erreur",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
+                utils.WriteDataError("frmAgenda-btnChoisir_Click", ex.ToString());
             }
+        
         }
 
 
@@ -219,7 +262,7 @@ namespace AppGroupe2.View
             {
                 if (dgAgenda.CurrentRow == null)
                 {
-                    MessageBox.Show("Sélectionnez un rendez-vous avant de supprimer.", "Erreur", 
+                    MessageBox.Show("Sélectionnez un rendez-vous avant de supprimer.", "Erreur",
                         MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
@@ -227,29 +270,54 @@ namespace AppGroupe2.View
                 int id;
                 if (!int.TryParse(dgAgenda.CurrentRow.Cells[0].Value.ToString(), out id))
                 {
-                    MessageBox.Show("ID invalide.", "Erreur", 
+                    MessageBox.Show("ID invalide.", "Erreur",
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
-                var a = db.Agenda.Find(id);
-                if (a == null)
+                if (MessageBox.Show("Voulez-vous vraiment supprimer ce rendez-vous?", "Confirmation",
+                    MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    MessageBox.Show("Rendez-vous introuvable.", "Erreur", 
-                        MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
+                    if (service.DeleteAgenda(id))
+                    {
+                        MessageBox.Show("Rendez-vous supprimé avec succès.", "Succès",
+                            MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        ResetForm();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Échec de la suppression.", "Erreur",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
-
-                db.Agenda.Remove(a);
-                db.SaveChanges();
-                ResetForm();
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Une erreur s'est produite : " + ex.Message, "Erreur", 
+                MessageBox.Show($"Erreur lors de la suppression: {ex.Message}", "Erreur",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
+                utils.WriteDataError("frmAgenda-btnSupprimer_Click", ex.ToString());
             }
-        }
+        
+    }
 
+        private bool ValidateHeures()
+        {
+            if (!TimeSpan.TryParse(txtHeureDebut.Text, out TimeSpan debut) ||
+                !TimeSpan.TryParse(txtHeureFin.Text, out TimeSpan fin))
+            {
+                MessageBox.Show("Format d'heure invalide (utilisez HH:MM).", "Erreur",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+
+            if (debut >= fin)
+            {
+                MessageBox.Show("L'heure de début doit être avant l'heure de fin.", "Erreur",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+
+            return true;
+        }
     }
 }

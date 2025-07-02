@@ -1,0 +1,19 @@
+[
+  {
+    "Name": "Nouveau profil",
+    "Projects": [
+      {
+        "Path": "AppGroupe2\\AppGroupe2.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "MetierRvMedical\\MetierRvMedical.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "APIMedicalRV\\APIMedicalRV.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
