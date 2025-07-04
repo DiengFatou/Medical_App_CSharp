@@ -57,75 +57,91 @@
             // 
             // btnChoisir
             // 
-            this.btnChoisir.Location = new System.Drawing.Point(649, 23);
-            this.btnChoisir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnChoisir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnChoisir.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
+            this.btnChoisir.ForeColor = System.Drawing.Color.White;
+            this.btnChoisir.Location = new System.Drawing.Point(535, 23);
+            this.btnChoisir.Margin = new System.Windows.Forms.Padding(4);
             this.btnChoisir.Name = "btnChoisir";
-            this.btnChoisir.Size = new System.Drawing.Size(77, 32);
+            this.btnChoisir.Size = new System.Drawing.Size(108, 49);
             this.btnChoisir.TabIndex = 32;
             this.btnChoisir.Text = "Choisir";
-            this.btnChoisir.UseVisualStyleBackColor = true;
+            this.btnChoisir.UseVisualStyleBackColor = false;
             this.btnChoisir.Click += new System.EventHandler(this.btnChoisir_Click);
             // 
             // btnAgenda
             // 
+            this.btnAgenda.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnAgenda.DialogResult = System.Windows.Forms.DialogResult.Yes;
+            this.btnAgenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
+            this.btnAgenda.ForeColor = System.Drawing.Color.White;
             this.btnAgenda.Location = new System.Drawing.Point(764, 23);
-            this.btnAgenda.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAgenda.Margin = new System.Windows.Forms.Padding(4);
             this.btnAgenda.Name = "btnAgenda";
-            this.btnAgenda.Size = new System.Drawing.Size(77, 32);
+            this.btnAgenda.Size = new System.Drawing.Size(106, 49);
             this.btnAgenda.TabIndex = 33;
             this.btnAgenda.Text = "Agenda";
-            this.btnAgenda.UseVisualStyleBackColor = true;
+            this.btnAgenda.UseVisualStyleBackColor = false;
             this.btnAgenda.Click += new System.EventHandler(this.btnAgenda_Click);
             // 
             // btnSupprimer
             // 
-            this.btnSupprimer.Location = new System.Drawing.Point(377, 389);
-            this.btnSupprimer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSupprimer.BackColor = System.Drawing.Color.Maroon;
+            this.btnSupprimer.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
+            this.btnSupprimer.ForeColor = System.Drawing.Color.White;
+            this.btnSupprimer.Location = new System.Drawing.Point(377, 418);
+            this.btnSupprimer.Margin = new System.Windows.Forms.Padding(4);
             this.btnSupprimer.Name = "btnSupprimer";
-            this.btnSupprimer.Size = new System.Drawing.Size(100, 41);
+            this.btnSupprimer.Size = new System.Drawing.Size(100, 56);
             this.btnSupprimer.TabIndex = 51;
             this.btnSupprimer.Text = "Supprimer";
-            this.btnSupprimer.UseVisualStyleBackColor = true;
+            this.btnSupprimer.UseVisualStyleBackColor = false;
             this.btnSupprimer.Click += new System.EventHandler(this.btnSupprimer_Click);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(18, 397);
+            this.label7.Location = new System.Drawing.Point(8, 485);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(63, 16);
+            this.label7.Size = new System.Drawing.Size(87, 22);
             this.label7.TabIndex = 47;
             this.label7.Text = "Identifiant";
             // 
             // txtIdentifiant
             // 
-            this.txtIdentifiant.Location = new System.Drawing.Point(18, 416);
-            this.txtIdentifiant.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtIdentifiant.Location = new System.Drawing.Point(7, 511);
+            this.txtIdentifiant.Margin = new System.Windows.Forms.Padding(4);
             this.txtIdentifiant.Name = "txtIdentifiant";
-            this.txtIdentifiant.Size = new System.Drawing.Size(311, 22);
+            this.txtIdentifiant.Size = new System.Drawing.Size(311, 28);
             this.txtIdentifiant.TabIndex = 43;
             // 
             // btnAjouter
             // 
-            this.btnAjouter.Location = new System.Drawing.Point(377, 191);
-            this.btnAjouter.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAjouter.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.btnAjouter.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAjouter.ForeColor = System.Drawing.Color.White;
+            this.btnAjouter.Location = new System.Drawing.Point(377, 182);
+            this.btnAjouter.Margin = new System.Windows.Forms.Padding(4);
             this.btnAjouter.Name = "btnAjouter";
-            this.btnAjouter.Size = new System.Drawing.Size(100, 42);
+            this.btnAjouter.Size = new System.Drawing.Size(100, 54);
             this.btnAjouter.TabIndex = 49;
             this.btnAjouter.Text = "Ajouter";
-            this.btnAjouter.UseVisualStyleBackColor = true;
+            this.btnAjouter.UseVisualStyleBackColor = false;
             this.btnAjouter.Click += new System.EventHandler(this.btnAjouter_Click);
             // 
             // btnModifier
             // 
-            this.btnModifier.Location = new System.Drawing.Point(377, 290);
-            this.btnModifier.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnModifier.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnModifier.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModifier.ForeColor = System.Drawing.Color.White;
+            this.btnModifier.Location = new System.Drawing.Point(377, 295);
+            this.btnModifier.Margin = new System.Windows.Forms.Padding(4);
             this.btnModifier.Name = "btnModifier";
-            this.btnModifier.Size = new System.Drawing.Size(100, 41);
+            this.btnModifier.Size = new System.Drawing.Size(100, 60);
             this.btnModifier.TabIndex = 50;
             this.btnModifier.Text = "Modifier";
-            this.btnModifier.UseVisualStyleBackColor = true;
+            this.btnModifier.UseVisualStyleBackColor = false;
             this.btnModifier.Click += new System.EventHandler(this.btnModifier_Click);
             // 
             // groupBox1
@@ -144,11 +160,13 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txtNomPrenom);
             this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(15, 78);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(343, 459);
+            this.groupBox1.Size = new System.Drawing.Size(343, 561);
             this.groupBox1.TabIndex = 52;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ajouter un Medcin";
@@ -156,120 +174,123 @@
             // cbbSpecialite
             // 
             this.cbbSpecialite.FormattingEnabled = true;
-            this.cbbSpecialite.Location = new System.Drawing.Point(19, 292);
-            this.cbbSpecialite.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbbSpecialite.Location = new System.Drawing.Point(12, 366);
+            this.cbbSpecialite.Margin = new System.Windows.Forms.Padding(4);
             this.cbbSpecialite.Name = "cbbSpecialite";
-            this.cbbSpecialite.Size = new System.Drawing.Size(310, 24);
+            this.cbbSpecialite.Size = new System.Drawing.Size(310, 30);
             this.cbbSpecialite.TabIndex = 60;
             // 
             // txtNumeroOrdreMedecin
             // 
-            this.txtNumeroOrdreMedecin.Location = new System.Drawing.Point(19, 356);
-            this.txtNumeroOrdreMedecin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNumeroOrdreMedecin.Location = new System.Drawing.Point(7, 439);
+            this.txtNumeroOrdreMedecin.Margin = new System.Windows.Forms.Padding(4);
             this.txtNumeroOrdreMedecin.Name = "txtNumeroOrdreMedecin";
-            this.txtNumeroOrdreMedecin.Size = new System.Drawing.Size(311, 22);
+            this.txtNumeroOrdreMedecin.Size = new System.Drawing.Size(311, 28);
             this.txtNumeroOrdreMedecin.TabIndex = 56;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(19, 336);
+            this.label6.Location = new System.Drawing.Point(8, 413);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(147, 16);
+            this.label6.Size = new System.Drawing.Size(196, 22);
             this.label6.TabIndex = 59;
             this.label6.Text = "Numero Ordre Medecin";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(19, 271);
+            this.label5.Location = new System.Drawing.Point(15, 340);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(67, 16);
+            this.label5.Size = new System.Drawing.Size(88, 22);
             this.label5.TabIndex = 58;
             this.label5.Text = "Specialite";
             // 
             // txtTelephone
             // 
-            this.txtTelephone.Location = new System.Drawing.Point(19, 244);
-            this.txtTelephone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTelephone.Location = new System.Drawing.Point(8, 295);
+            this.txtTelephone.Margin = new System.Windows.Forms.Padding(4);
             this.txtTelephone.Name = "txtTelephone";
-            this.txtTelephone.Size = new System.Drawing.Size(311, 22);
+            this.txtTelephone.Size = new System.Drawing.Size(311, 28);
             this.txtTelephone.TabIndex = 54;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(19, 224);
+            this.label4.Location = new System.Drawing.Point(8, 269);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(73, 16);
+            this.label4.Size = new System.Drawing.Size(96, 22);
             this.label4.TabIndex = 57;
             this.label4.Text = "Telephone";
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(19, 178);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEmail.Location = new System.Drawing.Point(8, 223);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(311, 22);
+            this.txtEmail.Size = new System.Drawing.Size(311, 28);
             this.txtEmail.TabIndex = 53;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(19, 159);
+            this.label3.Location = new System.Drawing.Point(15, 197);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 16);
+            this.label3.Size = new System.Drawing.Size(54, 22);
             this.label3.TabIndex = 55;
             this.label3.Text = "Email";
             // 
             // txtAdresse
             // 
-            this.txtAdresse.Location = new System.Drawing.Point(19, 114);
-            this.txtAdresse.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtAdresse.Location = new System.Drawing.Point(11, 148);
+            this.txtAdresse.Margin = new System.Windows.Forms.Padding(4);
             this.txtAdresse.Name = "txtAdresse";
-            this.txtAdresse.Size = new System.Drawing.Size(311, 22);
+            this.txtAdresse.Size = new System.Drawing.Size(311, 28);
             this.txtAdresse.TabIndex = 51;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(19, 94);
+            this.label2.Location = new System.Drawing.Point(8, 121);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 16);
+            this.label2.Size = new System.Drawing.Size(76, 22);
             this.label2.TabIndex = 52;
             this.label2.Text = "Adresse";
             // 
             // txtNomPrenom
             // 
-            this.txtNomPrenom.Location = new System.Drawing.Point(19, 57);
-            this.txtNomPrenom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNomPrenom.Location = new System.Drawing.Point(8, 77);
+            this.txtNomPrenom.Margin = new System.Windows.Forms.Padding(4);
             this.txtNomPrenom.Name = "txtNomPrenom";
-            this.txtNomPrenom.Size = new System.Drawing.Size(311, 22);
+            this.txtNomPrenom.Size = new System.Drawing.Size(311, 28);
             this.txtNomPrenom.TabIndex = 50;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(19, 37);
+            this.label1.Location = new System.Drawing.Point(8, 51);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(85, 16);
+            this.label1.Size = new System.Drawing.Size(112, 22);
             this.label1.TabIndex = 49;
             this.label1.Text = "Nom prenom";
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.dgMedecin);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.ForeColor = System.Drawing.Color.White;
             this.groupBox2.Location = new System.Drawing.Point(491, 78);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox2.Size = new System.Drawing.Size(864, 550);
+            this.groupBox2.Size = new System.Drawing.Size(864, 561);
             this.groupBox2.TabIndex = 53;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Liste des Medecins";
@@ -278,17 +299,17 @@
             // 
             this.dgMedecin.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgMedecin.Location = new System.Drawing.Point(20, 22);
-            this.dgMedecin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgMedecin.Margin = new System.Windows.Forms.Padding(4);
             this.dgMedecin.Name = "dgMedecin";
             this.dgMedecin.RowHeadersWidth = 62;
-            this.dgMedecin.Size = new System.Drawing.Size(821, 514);
+            this.dgMedecin.Size = new System.Drawing.Size(821, 522);
             this.dgMedecin.TabIndex = 32;
             // 
             // frmMedecin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DimGray;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(73)))), ((int)(((byte)(101)))));
             this.ClientSize = new System.Drawing.Size(1378, 650);
             this.ControlBox = false;
             this.Controls.Add(this.groupBox2);
@@ -298,7 +319,8 @@
             this.Controls.Add(this.btnAjouter);
             this.Controls.Add(this.btnAgenda);
             this.Controls.Add(this.btnChoisir);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(73)))), ((int)(((byte)(101)))));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmMedecin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Medecin";

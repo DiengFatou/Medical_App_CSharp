@@ -140,6 +140,9 @@ namespace MetierRvMedical
         [OperationContract]
         bool AddAdmin(Admin admin);
 
+        [OperationContract]
+        bool AddError(Td_Erreur erreur);
+
 
         // TODO: ajoutez vos opérations de service ici
     }

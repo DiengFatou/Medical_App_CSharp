@@ -2,70 +2,69 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AppGroupe2.Model;
+using System.Web;
+using AppGroupe2.ServiceMetier;
+using MaterielRvMedical.Model;
 
 namespace AppGroupe2.App_Code
 {
     public class Utils
     {
-        //Déclaration de la variable permettant d'accéder à la base de données
-        BdRvMedicalContexe db = new BdRvMedicalContexe();
-
         /// <summary>
-        /// rédiger les erreurs au niveau de la base de données
+        /// Rédiger les erreurs au niveau de la base de données via le service WCF
         /// </summary>
-        /// <param name="titre">la titre provequant l'erreur</param>
-        /// <param name="erreur">le message d'erreur</param>
+        /// <param name="TitreErreur">Le titre provoquant l'erreur</param>
+        /// <param name="erreur">Le message d'erreur</param>
         public void WriteDataError(string TitreErreur, string erreur)
         {
             try
             {
-                Td_Erreur log = new Td_Erreur();
-                log.DateErreur = DateTime.Now;
-                log.DescriptionErreur = erreur.Length > 1000 ? erreur.Substring(0, 1000) : erreur;
-                log.TitreErreur = TitreErreur;
-                db.Td_Erreur.Add(log);
-                db.SaveChanges();
+                using (var service = new Service1Client())
+                {
+                    var log = new Td_Erreur
+                    {
+                        DateErreur = DateTime.Now,
+                        DescriptionErreur = erreur.Length > 1000 ? erreur.Substring(0, 1000) : erreur,
+                        TitreErreur = TitreErreur
+                    };
+
+                    service.AddError(log); // Assure-toi que cette méthode existe dans le service
+                }
             }
             catch (Exception ex)
             {
                 WriteLogSystem(ex.ToString(), "WriteDataError");
             }
         }
-        /// <summary>
-        /// Rédiger le message d'erreur dans un fichier
-        /// </summary>
-        /// <param name="erreur">le message d'erreur</param>
-        /// <param name="libelle">le message d'erreur</param>
 
+        /// <summary>
+        /// Rédiger le message d'erreur dans l'Observateur d'événements Windows
+        /// </summary>
         public static void WriteFileError(string erreur, string libelle)
         {
-            using (EventLog eventLog = new EventLog("Application"))
+            try
             {
-                eventLog.Source = "GestionRvMedical";
-                eventLog.WriteEntry(string.Format("date: {0}, libelle: {1}, desciption: {2}", DateTime.Now, libelle, erreur), EventLogEntryType.Information, 101, 1);
+                using (EventLog eventLog = new EventLog("Application"))
+                {
+                    eventLog.Source = "GestionRvMedical";
+                    eventLog.WriteEntry($"date: {DateTime.Now}, libelle: {libelle}, desciption: {erreur}",
+                        EventLogEntryType.Information, 101, 1);
+                }
             }
+            catch { }
         }
 
-        /// <summary>
-        /// Rédiger le message d'erreur dans un fichier
-        /// </summary>
-        /// <param name="message">le message d'erreur</param>
         public static void WriteFileError(string message)
         {
             try
             {
-                string path = System.Web.HttpContext.Current.Server.MapPath("~/Error/erreur.txt");
-                System.IO.TextWriter writeFile = new StreamWriter(path, true);
-                writeFile.WriteLine("" + DateTime.Now);
-                writeFile.WriteLine(message);
-                writeFile.WriteLine("---------------------------------------------------------------------------------------");
-                writeFile.Flush();
-                writeFile.Close();
-                writeFile = null;
+                string path = HttpContext.Current.Server.MapPath("~/Error/erreur.txt");
+                using (TextWriter writeFile = new StreamWriter(path, true))
+                {
+                    writeFile.WriteLine(DateTime.Now);
+                    writeFile.WriteLine(message);
+                    writeFile.WriteLine("---------------------------------------------------------------------------------------");
+                }
             }
             catch (IOException e)
             {
@@ -73,80 +72,50 @@ namespace AppGroupe2.App_Code
             }
         }
 
-        /// <summary>
-        /// Pour créer un fichier d'erreur
-        /// </summary>
-        /// <param name="message">le message d'erreur</param>
-        /// <returns>retounre si le fichier est créer</returns>
         public bool CreateFile(string message)
         {
             bool rep = false;
-            string fileName = string.Format("{0}{1}{2}", DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
+            string fileName = $"{DateTime.Now:yyyyMMdd}.txt";
             try
             {
-                string path = System.Web.HttpContext.Current.Server.MapPath("~/Error/" + fileName + ".txt");
+                string path = HttpContext.Current.Server.MapPath($"~/Error/{fileName}");
+
                 if (File.Exists(path))
-                {
                     File.Delete(path);
-                }
-                File.Create(path);
-                bool fileUse = true;
-                while (fileUse)
+
+                using (TextWriter writeFile = new StreamWriter(path, true))
                 {
-                    try
-                    {
-                        System.IO.TextWriter writeFile = new StreamWriter(path, true);
-                        writeFile.WriteLine("" + DateTime.Now);
-                        writeFile.WriteLine(message);
-                        writeFile.WriteLine("-------------------------------------------");
-                        writeFile.Flush();
-                        writeFile.Close();
-                        writeFile = null;
-                        fileUse = false;
-                    }
-                    catch (Exception e)
-                    {
-                        WriteLogSystem(e.ToString(), "CreateFile");
-                    }
+                    writeFile.WriteLine(DateTime.Now);
+                    writeFile.WriteLine(message);
+                    writeFile.WriteLine("-------------------------------------------");
                 }
+
                 rep = true;
             }
             catch (IOException e)
             {
-                WriteLogSystem(e.ToString(), "WriteFileError");
+                WriteLogSystem(e.ToString(), "CreateFile");
             }
+
             return rep;
         }
 
-        /// <summary>
-        /// Permet de rédiger une liste d'erreur dans un fichier
-        /// </summary>
-        /// <param name="message">liste message d'erreur</param>
-        /// <param name="theFile">nom du fichier</param>
-        public void WriteErrorLoad(List<string> message, string theFile)
+        public void WriteErrorLoad(List<string> messages, string fileName)
         {
             try
             {
-                string path = System.Web.HttpContext.Current.Server.MapPath("~/Error/" + theFile + ".txt");
+                string path = HttpContext.Current.Server.MapPath($"~/Error/{fileName}.txt");
+
                 if (File.Exists(path))
-                {
                     File.Delete(path);
-                }
-                System.IO.TextWriter writeFile = new StreamWriter(path, true);
-                //writeFile.WriteLine("" + DateTime.Now);
-                //while (!IsFileReady(path))
-                //{
-                //    System.Threading.Thread.Sleep(1000);
-                //}
-                writeFile.WriteLine("---------------------DEBUT----------------------");
-                foreach (var item in message)
+
+                using (TextWriter writeFile = new StreamWriter(path, true))
                 {
-                    writeFile.WriteLine(item);
+                    writeFile.WriteLine("---------------------DEBUT----------------------");
+                    foreach (var msg in messages)
+                        writeFile.WriteLine(msg);
+                    writeFile.WriteLine("----------------------FIN---------------------");
                 }
-                writeFile.WriteLine("----------------------FIN---------------------");
-                writeFile.Flush();
-                writeFile.Close();
-                writeFile = null;
             }
             catch (IOException e)
             {
@@ -154,19 +123,18 @@ namespace AppGroupe2.App_Code
             }
         }
 
-        /// <summary>
-        /// Ecrire un message d'erreur au niveau du Systéme
-        /// </summary>
-        /// <param name="erreur">Message d'erreur</param>
-        /// <param name="libelle">titre du message</param>
         public static void WriteLogSystem(string erreur, string libelle)
         {
-            using (EventLog eventLog = new EventLog("Application"))
+            try
             {
-                eventLog.Source = "DPV Permis";
-                eventLog.WriteEntry(string.Format("date: {0}, libelle: {1}, description {2}", DateTime.Now, libelle, erreur), EventLogEntryType.Information, 101, 1);
+                using (EventLog eventLog = new EventLog("Application"))
+                {
+                    eventLog.Source = "DPV Permis";
+                    eventLog.WriteEntry($"date: {DateTime.Now}, libelle: {libelle}, description {erreur}",
+                        EventLogEntryType.Error, 101, 1);
+                }
             }
+            catch { }
         }
-
     }
 }

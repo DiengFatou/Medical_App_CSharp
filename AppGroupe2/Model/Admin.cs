@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AppGroupe2.Model
+namespace MaterielRvMedical.Model
 {
-    public class Admin:Utilisateur
+    [DataContract]
+    public class Admin : Utilisateur
     {
     }
 }

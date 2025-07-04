@@ -11,7 +11,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using BdRvMedicalContexe = AppGroupe2.Model.BdRvMedicalContexe;
+using BdRvMedicalContexe = AppGroupe2.Model;
 using MaterielRvMedical.Model;
 
 namespace AppGroupe2.View
@@ -272,5 +272,9 @@ namespace AppGroupe2.View
             }
         }
 
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

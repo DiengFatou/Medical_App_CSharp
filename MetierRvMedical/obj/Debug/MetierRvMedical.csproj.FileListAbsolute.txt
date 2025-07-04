@@ -134,8 +134,6 @@ D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\MetierRvMedical\bin\System.Numerics.Vect
 D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\MetierRvMedical\bin\System.Runtime.CompilerServices.Unsafe.xml
 D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\MetierRvMedical\bin\System.Threading.Tasks.Extensions.xml
 D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\MetierRvMedical\obj\Debug\MetierRvMedical.csproj.AssemblyReference.cache
-D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\MetierRvMedical\obj\Debug\MetierRvMedical.Migrations.InitialCreate.resources
-D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\MetierRvMedical\obj\Debug\MetierRvMedical.csproj.GenerateResource.cache
 D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\MetierRvMedical\obj\Debug\MetierRvMedical.csproj.CoreCompileInputs.cache
 D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\MetierRvMedical\obj\Debug\MetierRv.11BFE176.Up2Date
 D:\Java\ProjetGroupe2 (2)\ProjetGroupe2\MetierRvMedical\obj\Debug\MetierRvMedical.dll

@@ -471,5 +471,10 @@ namespace AppGroupe2.View
                 return new List<SelectListViewModel>();
             }
         }
+
+        private void cbbMedecin_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

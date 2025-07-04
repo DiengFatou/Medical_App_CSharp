@@ -12,6 +12,7 @@ using AppGroupe2.App_Start;
 using AppGroupe2.Model;
 using AppGroupe2.Helper;
 using AppGroupe2.ServiceMetier;
+using AppGroupe2.View;
 
 namespace AppGroupe2
 {
@@ -39,8 +40,8 @@ namespace AppGroupe2
 
                 if (leUser != null && CryptString.VerifyMd5Hash(txtMdp.Text, leUser.MotDePasse))
                 {
-                    frmMDI f = new frmMDI();
-                    f.role = leUser.Role.Code;
+                    frmMenu f = new frmMenu();
+                    f.RoleUtilisateur = leUser.Role.Code;
                     f.Show();
                     this.Hide();
 

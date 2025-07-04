@@ -131,11 +131,6 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\202506181214433_InitialCreate.cs" />
-    <Compile Include="Migrations\202506181214433_InitialCreate.Designer.cs">
-      <DependentUpon>202506181214433_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Admin.cs" />
     <Compile Include="Model\Agenda.cs" />
     <Compile Include="Model\BdRvMedicalContexe.cs" />
@@ -168,11 +163,6 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\202506181214433_InitialCreate.resx">
-      <DependentUpon>202506181214433_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

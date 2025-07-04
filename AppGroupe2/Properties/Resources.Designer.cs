@@ -83,6 +83,16 @@ namespace AppGroupe2.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap image_removebg_preview__3_ {
+            get {
+                object obj = ResourceManager.GetObject("image-removebg-preview (3)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Medcin {
             get {
                 object obj = ResourceManager.GetObject("Medcin", resourceCulture);
@@ -126,6 +136,16 @@ namespace AppGroupe2.Properties {
         internal static System.Drawing.Bitmap Rendezvous2 {
             get {
                 object obj = ResourceManager.GetObject("Rendezvous2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Telemedicine_2_ {
+            get {
+                object obj = ResourceManager.GetObject("Telemedicine-2-", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

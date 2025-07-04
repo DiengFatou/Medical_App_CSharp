@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/MaterielRvMedical.Model" xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/MaterielRvMedical.Model" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:import schemaLocation="http://localhost:59047/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:import schemaLocation="http://localhost:8080/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
   <xs:complexType name="Agenda">
     <xs:sequence>
       <xs:element minOccurs="0" name="Creneau" type="xs:int" />
@@ -190,4 +190,13 @@
     </xs:complexContent>
   </xs:complexType>
   <xs:element name="Admin" nillable="true" type="tns:Admin" />
+  <xs:complexType name="Td_Erreur">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DateErreur" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DescriptionErreur" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="TitreErreur" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Td_Erreur" nillable="true" type="tns:Td_Erreur" />
 </xs:schema>

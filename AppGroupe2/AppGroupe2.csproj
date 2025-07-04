@@ -163,6 +163,7 @@
     <Reference Include="System.Diagnostics.DiagnosticSource, Version=8.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Diagnostics.DiagnosticSource.8.0.1\lib\net462\System.Diagnostics.DiagnosticSource.dll</HintPath>
     </Reference>
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.IO.Pipelines, Version=9.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.IO.Pipelines.9.0.2\lib\net462\System.IO.Pipelines.dll</HintPath>
     </Reference>
@@ -216,15 +217,6 @@
     </Compile>
     <Compile Include="Helper\CryptString.cs" />
     <Compile Include="Helper\Utils.cs" />
-    <Compile Include="Migrations\202505132324381_InitialCreate.cs" />
-    <Compile Include="Migrations\202505132324381_InitialCreate.Designer.cs">
-      <DependentUpon>202505132324381_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202506040150288_FixModelChanges.cs" />
-    <Compile Include="Migrations\202506040150288_FixModelChanges.Designer.cs">
-      <DependentUpon>202506040150288_FixModelChanges.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Admin.cs" />
     <Compile Include="Model\Role.cs" />
     <Compile Include="Utils\GMailer.cs" />
@@ -275,7 +267,12 @@
       <DependentUpon>rptTicketRv.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="View\EaventArgs.cs" />
+    <Compile Include="View\frmAccueil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmAccueil.Designer.cs">
+      <DependentUpon>frmAccueil.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\frmAgenda.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -306,17 +303,17 @@
     <Compile Include="View\frmRendezVous.Designer.cs">
       <DependentUpon>frmRendezVous.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMDI.resx">
       <DependentUpon>frmMDI.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202505132324381_InitialCreate.resx">
-      <DependentUpon>202505132324381_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202506040150288_FixModelChanges.resx">
-      <DependentUpon>202506040150288_FixModelChanges.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -340,6 +337,9 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptTicketRv.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\frmAccueil.resx">
+      <DependentUpon>frmAccueil.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\frmAgenda.resx">
       <DependentUpon>frmAgenda.cs</DependentUpon>
     </EmbeddedResource>
@@ -354,6 +354,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\frmRendezVous.resx">
       <DependentUpon>frmRendezVous.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Connected Services\ServiceMetier\Service1.wsdl" />
     <None Include="Connected Services\ServiceMetier\Service1.xsd">
@@ -370,15 +373,25 @@
     </None>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\MaterielRvMedical.Model.Agenda.datasource" />
+    <None Include="Properties\DataSources\MaterielRvMedical.Model.Agenda1.datasource" />
     <None Include="Properties\DataSources\MaterielRvMedical.Model.Creneau.datasource" />
+    <None Include="Properties\DataSources\MaterielRvMedical.Model.Creneau1.datasource" />
     <None Include="Properties\DataSources\MaterielRvMedical.Model.GroupeSanguin.datasource" />
+    <None Include="Properties\DataSources\MaterielRvMedical.Model.GroupeSanguin1.datasource" />
     <None Include="Properties\DataSources\MaterielRvMedical.Model.Medecin.datasource" />
+    <None Include="Properties\DataSources\MaterielRvMedical.Model.Medecin1.datasource" />
     <None Include="Properties\DataSources\MaterielRvMedical.Model.Patient.datasource" />
+    <None Include="Properties\DataSources\MaterielRvMedical.Model.Patient1.datasource" />
     <None Include="Properties\DataSources\MaterielRvMedical.Model.RendezVous.datasource" />
+    <None Include="Properties\DataSources\MaterielRvMedical.Model.RendezVous1.datasource" />
     <None Include="Properties\DataSources\MaterielRvMedical.Model.Role.datasource" />
+    <None Include="Properties\DataSources\MaterielRvMedical.Model.Role1.datasource" />
     <None Include="Properties\DataSources\MaterielRvMedical.Model.Soin.datasource" />
+    <None Include="Properties\DataSources\MaterielRvMedical.Model.Soin1.datasource" />
     <None Include="Properties\DataSources\MaterielRvMedical.Model.Specialite.datasource" />
+    <None Include="Properties\DataSources\MaterielRvMedical.Model.Specialite1.datasource" />
     <None Include="Properties\DataSources\MaterielRvMedical.Model.Utilisateur.datasource" />
+    <None Include="Properties\DataSources\MaterielRvMedical.Model.Utilisateur1.datasource" />
     <None Include="Properties\DataSources\MetierRvMedical.CompositeType.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -424,7 +437,8 @@
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
     <Content Include="Error\erreur.txt" />
-    <Content Include="MetroFramework.txt" />
+    <Content Include="Images\image-removebg-preview %283%29.png" />
+    <Content Include="Images\Telemedicine-2-.jpg" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />

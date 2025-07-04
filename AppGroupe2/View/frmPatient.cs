@@ -382,6 +382,8 @@ namespace AppGroupe2.View
                 utils.WriteDataError("frmPatient-btnRv_Click", ex.ToString());
             }
         }
+
+       
     }
 
     public class SelectListViewModel

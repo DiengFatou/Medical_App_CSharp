@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Data.Entity;
 using MySql.Data.EntityFramework;
 
-namespace AppGroupe2.Model
+namespace MaterielRvMedical.Model
 {
 
     [DbConfigurationType(typeof(MySqlEFConfiguration))]
@@ -17,6 +17,7 @@ namespace AppGroupe2.Model
     /// </summary>
     public class BdRvMedicalContexe:DbContext
     {
+       
 
         public BdRvMedicalContexe() : base("bdRvMedicalContext") { }
            

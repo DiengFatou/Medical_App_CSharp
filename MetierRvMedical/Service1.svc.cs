@@ -678,7 +678,22 @@ namespace MetierRvMedical
                 return false;
             }
         }
+        public bool AddError(Td_Erreur erreur)
+        {
+            try
+            {
+                db.Td_Erreur.Add(erreur);
+                db.SaveChanges();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
 
     }
+
 
 }

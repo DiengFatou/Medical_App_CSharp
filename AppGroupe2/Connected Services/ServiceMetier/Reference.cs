@@ -256,6 +256,12 @@ namespace AppGroupe2.ServiceMetier {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/AddAdmin", ReplyAction="http://tempuri.org/IService1/AddAdminResponse")]
         System.Threading.Tasks.Task<bool> AddAdminAsync(MaterielRvMedical.Model.Admin admin);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/AddError", ReplyAction="http://tempuri.org/IService1/AddErrorResponse")]
+        bool AddError(MaterielRvMedical.Model.Td_Erreur erreur);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/AddError", ReplyAction="http://tempuri.org/IService1/AddErrorResponse")]
+        System.Threading.Tasks.Task<bool> AddErrorAsync(MaterielRvMedical.Model.Td_Erreur erreur);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -603,6 +609,14 @@ namespace AppGroupe2.ServiceMetier {
         
         public System.Threading.Tasks.Task<bool> AddAdminAsync(MaterielRvMedical.Model.Admin admin) {
             return base.Channel.AddAdminAsync(admin);
+        }
+        
+        public bool AddError(MaterielRvMedical.Model.Td_Erreur erreur) {
+            return base.Channel.AddError(erreur);
+        }
+        
+        public System.Threading.Tasks.Task<bool> AddErrorAsync(MaterielRvMedical.Model.Td_Erreur erreur) {
+            return base.Channel.AddErrorAsync(erreur);
         }
     }
 }

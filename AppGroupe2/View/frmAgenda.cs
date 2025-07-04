@@ -319,5 +319,10 @@ namespace AppGroupe2.View
 
             return true;
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

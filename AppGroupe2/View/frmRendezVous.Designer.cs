@@ -32,7 +32,6 @@
             this.dgCreneau = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnPatient = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.cbbSoin = new System.Windows.Forms.ComboBox();
             this.cbbMedecin = new System.Windows.Forms.ComboBox();
@@ -57,7 +56,6 @@
             this.lblIdPatient = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.dgRendezvous = new System.Windows.Forms.DataGridView();
-            this.btnFermer = new System.Windows.Forms.Button();
             this.btnSupprimer = new System.Windows.Forms.Button();
             this.btnModifier = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
@@ -73,11 +71,13 @@
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.dgCreneau);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(11, 63);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(353, 426);
+            this.groupBox1.Size = new System.Drawing.Size(353, 417);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Selectionner l\'heure";
@@ -98,10 +98,11 @@
             // 
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
             this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.btnPatient);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.cbbSoin);
             this.groupBox2.Controls.Add(this.cbbMedecin);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.ForeColor = System.Drawing.Color.White;
             this.groupBox2.Location = new System.Drawing.Point(630, 63);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
@@ -114,50 +115,39 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(36, 37);
+            this.label3.Location = new System.Drawing.Point(31, 60);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 16);
+            this.label3.Size = new System.Drawing.Size(77, 22);
             this.label3.TabIndex = 5;
             this.label3.Text = "Medecin";
-            // 
-            // btnPatient
-            // 
-            this.btnPatient.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnPatient.Location = new System.Drawing.Point(68, 166);
-            this.btnPatient.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnPatient.Name = "btnPatient";
-            this.btnPatient.Size = new System.Drawing.Size(97, 41);
-            this.btnPatient.TabIndex = 15;
-            this.btnPatient.Text = "Patient";
-            this.btnPatient.UseVisualStyleBackColor = false;
-            this.btnPatient.Click += new System.EventHandler(this.btnPatient_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(36, 102);
+            this.label2.Location = new System.Drawing.Point(36, 164);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(34, 16);
+            this.label2.Size = new System.Drawing.Size(46, 22);
             this.label2.TabIndex = 4;
             this.label2.Text = "Soin";
             // 
             // cbbSoin
             // 
             this.cbbSoin.FormattingEnabled = true;
-            this.cbbSoin.Location = new System.Drawing.Point(35, 121);
+            this.cbbSoin.Location = new System.Drawing.Point(35, 188);
             this.cbbSoin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbbSoin.Name = "cbbSoin";
-            this.cbbSoin.Size = new System.Drawing.Size(152, 24);
+            this.cbbSoin.Size = new System.Drawing.Size(152, 30);
             this.cbbSoin.TabIndex = 2;
             // 
             // cbbMedecin
             // 
             this.cbbMedecin.FormattingEnabled = true;
-            this.cbbMedecin.Location = new System.Drawing.Point(35, 55);
+            this.cbbMedecin.Location = new System.Drawing.Point(35, 84);
             this.cbbMedecin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbbMedecin.Name = "cbbMedecin";
-            this.cbbMedecin.Size = new System.Drawing.Size(152, 24);
+            this.cbbMedecin.Size = new System.Drawing.Size(152, 30);
             this.cbbMedecin.TabIndex = 1;
+            this.cbbMedecin.SelectedIndexChanged += new System.EventHandler(this.cbbMedecin_SelectedIndexChanged);
             // 
             // groupBox3
             // 
@@ -168,75 +158,80 @@
             this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Controls.Add(this.cbbModePay);
             this.groupBox3.Controls.Add(this.cbbCout);
-            this.groupBox3.Location = new System.Drawing.Point(907, 63);
+            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.ForeColor = System.Drawing.Color.White;
+            this.groupBox3.Location = new System.Drawing.Point(907, 46);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox3.Size = new System.Drawing.Size(244, 242);
+            this.groupBox3.Size = new System.Drawing.Size(244, 259);
             this.groupBox3.TabIndex = 6;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Paiement";
             // 
             // txtReferencePaiement
             // 
-            this.txtReferencePaiement.Location = new System.Drawing.Point(16, 196);
+            this.txtReferencePaiement.Location = new System.Drawing.Point(23, 218);
             this.txtReferencePaiement.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtReferencePaiement.Name = "txtReferencePaiement";
-            this.txtReferencePaiement.Size = new System.Drawing.Size(154, 22);
+            this.txtReferencePaiement.Size = new System.Drawing.Size(154, 28);
             this.txtReferencePaiement.TabIndex = 6;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(18, 112);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(19, 124);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(121, 16);
+            this.label4.Size = new System.Drawing.Size(159, 22);
             this.label4.TabIndex = 5;
             this.label4.Text = "Mode de Paiement";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(18, 178);
+            this.label5.Location = new System.Drawing.Point(19, 194);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(149, 16);
+            this.label5.Size = new System.Drawing.Size(198, 22);
             this.label5.TabIndex = 4;
             this.label5.Text = "Reference de Paiement";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(18, 37);
+            this.label6.Location = new System.Drawing.Point(19, 45);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(34, 16);
+            this.label6.Size = new System.Drawing.Size(48, 22);
             this.label6.TabIndex = 3;
             this.label6.Text = "Cout";
             // 
             // cbbModePay
             // 
             this.cbbModePay.FormattingEnabled = true;
-            this.cbbModePay.Location = new System.Drawing.Point(16, 130);
+            this.cbbModePay.Location = new System.Drawing.Point(23, 148);
             this.cbbModePay.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbbModePay.Name = "cbbModePay";
-            this.cbbModePay.Size = new System.Drawing.Size(152, 24);
+            this.cbbModePay.Size = new System.Drawing.Size(152, 30);
             this.cbbModePay.TabIndex = 1;
             // 
             // cbbCout
             // 
             this.cbbCout.FormattingEnabled = true;
-            this.cbbCout.Location = new System.Drawing.Point(16, 58);
+            this.cbbCout.Location = new System.Drawing.Point(23, 69);
             this.cbbCout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbbCout.Name = "cbbCout";
-            this.cbbCout.Size = new System.Drawing.Size(152, 24);
+            this.cbbCout.Size = new System.Drawing.Size(152, 30);
             this.cbbCout.TabIndex = 0;
             // 
             // btnGenerer
             // 
-            this.btnGenerer.BackColor = System.Drawing.Color.LimeGreen;
-            this.btnGenerer.Location = new System.Drawing.Point(1080, 15);
+            this.btnGenerer.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.btnGenerer.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGenerer.ForeColor = System.Drawing.Color.White;
+            this.btnGenerer.Location = new System.Drawing.Point(1189, 10);
             this.btnGenerer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnGenerer.Name = "btnGenerer";
-            this.btnGenerer.Size = new System.Drawing.Size(71, 22);
+            this.btnGenerer.Size = new System.Drawing.Size(100, 44);
             this.btnGenerer.TabIndex = 7;
             this.btnGenerer.Text = "Generer";
             this.btnGenerer.UseVisualStyleBackColor = false;
@@ -245,19 +240,23 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(786, 16);
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(781, 20);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(106, 16);
+            this.label7.Size = new System.Drawing.Size(143, 22);
             this.label7.TabIndex = 8;
             this.label7.Text = "Numéro de reçu:";
             // 
             // btnValider
             // 
-            this.btnValider.BackColor = System.Drawing.Color.LimeGreen;
+            this.btnValider.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.btnValider.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnValider.ForeColor = System.Drawing.Color.White;
             this.btnValider.Location = new System.Drawing.Point(628, 326);
             this.btnValider.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnValider.Name = "btnValider";
-            this.btnValider.Size = new System.Drawing.Size(100, 27);
+            this.btnValider.Size = new System.Drawing.Size(100, 44);
             this.btnValider.TabIndex = 10;
             this.btnValider.Text = "Valider";
             this.btnValider.UseVisualStyleBackColor = false;
@@ -266,10 +265,12 @@
             // btnAnnuler
             // 
             this.btnAnnuler.BackColor = System.Drawing.Color.Red;
+            this.btnAnnuler.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAnnuler.ForeColor = System.Drawing.Color.White;
             this.btnAnnuler.Location = new System.Drawing.Point(1012, 326);
             this.btnAnnuler.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAnnuler.Name = "btnAnnuler";
-            this.btnAnnuler.Size = new System.Drawing.Size(100, 27);
+            this.btnAnnuler.Size = new System.Drawing.Size(100, 44);
             this.btnAnnuler.TabIndex = 11;
             this.btnAnnuler.Text = "Annuler";
             this.btnAnnuler.UseVisualStyleBackColor = false;
@@ -293,10 +294,11 @@
             // 
             // txtNumeroRecu
             // 
-            this.txtNumeroRecu.Location = new System.Drawing.Point(915, 14);
+            this.txtNumeroRecu.Location = new System.Drawing.Point(930, 14);
             this.txtNumeroRecu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtNumeroRecu.Multiline = true;
             this.txtNumeroRecu.Name = "txtNumeroRecu";
-            this.txtNumeroRecu.Size = new System.Drawing.Size(147, 22);
+            this.txtNumeroRecu.Size = new System.Drawing.Size(236, 28);
             this.txtNumeroRecu.TabIndex = 9;
             // 
             // txtCreneauSelectionne
@@ -310,7 +312,9 @@
             // btnAgenda
             // 
             this.btnAgenda.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnAgenda.Location = new System.Drawing.Point(647, 6);
+            this.btnAgenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgenda.ForeColor = System.Drawing.Color.White;
+            this.btnAgenda.Location = new System.Drawing.Point(645, 8);
             this.btnAgenda.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAgenda.Name = "btnAgenda";
             this.btnAgenda.Size = new System.Drawing.Size(91, 46);
@@ -325,14 +329,16 @@
             this.lblPatient.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.lblPatient.Location = new System.Drawing.Point(18, 49);
             this.lblPatient.Name = "lblPatient";
-            this.lblPatient.Size = new System.Drawing.Size(0, 16);
+            this.lblPatient.Size = new System.Drawing.Size(0, 22);
             this.lblPatient.TabIndex = 17;
             // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.lblIdPatient);
             this.groupBox4.Controls.Add(this.lblPatient);
-            this.groupBox4.Location = new System.Drawing.Point(11, 504);
+            this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox4.ForeColor = System.Drawing.Color.White;
+            this.groupBox4.Location = new System.Drawing.Point(11, 495);
             this.groupBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -348,17 +354,19 @@
             this.lblIdPatient.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.lblIdPatient.Location = new System.Drawing.Point(18, 18);
             this.lblIdPatient.Name = "lblIdPatient";
-            this.lblIdPatient.Size = new System.Drawing.Size(0, 16);
+            this.lblIdPatient.Size = new System.Drawing.Size(0, 22);
             this.lblIdPatient.TabIndex = 19;
             // 
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.dgRendezvous);
-            this.groupBox5.Location = new System.Drawing.Point(630, 358);
+            this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox5.ForeColor = System.Drawing.Color.White;
+            this.groupBox5.Location = new System.Drawing.Point(628, 374);
             this.groupBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox5.Size = new System.Drawing.Size(626, 330);
+            this.groupBox5.Size = new System.Drawing.Size(626, 312);
             this.groupBox5.TabIndex = 19;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Liste Rendezvous";
@@ -371,51 +379,44 @@
             this.dgRendezvous.Name = "dgRendezvous";
             this.dgRendezvous.RowHeadersWidth = 62;
             this.dgRendezvous.RowTemplate.Height = 28;
-            this.dgRendezvous.Size = new System.Drawing.Size(592, 290);
+            this.dgRendezvous.Size = new System.Drawing.Size(592, 269);
             this.dgRendezvous.TabIndex = 0;
-            // 
-            // btnFermer
-            // 
-            this.btnFermer.BackColor = System.Drawing.Color.Red;
-            this.btnFermer.Location = new System.Drawing.Point(1172, 14);
-            this.btnFermer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnFermer.Name = "btnFermer";
-            this.btnFermer.Size = new System.Drawing.Size(67, 23);
-            this.btnFermer.TabIndex = 20;
-            this.btnFermer.Text = "Fermer";
-            this.btnFermer.UseVisualStyleBackColor = false;
-            this.btnFermer.Click += new System.EventHandler(this.btnFermer_Click);
             // 
             // btnSupprimer
             // 
+            this.btnSupprimer.BackColor = System.Drawing.Color.Maroon;
+            this.btnSupprimer.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSupprimer.ForeColor = System.Drawing.Color.White;
             this.btnSupprimer.Location = new System.Drawing.Point(884, 326);
             this.btnSupprimer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSupprimer.Name = "btnSupprimer";
-            this.btnSupprimer.Size = new System.Drawing.Size(101, 27);
+            this.btnSupprimer.Size = new System.Drawing.Size(101, 44);
             this.btnSupprimer.TabIndex = 21;
             this.btnSupprimer.Text = "Supprimer";
-            this.btnSupprimer.UseVisualStyleBackColor = true;
+            this.btnSupprimer.UseVisualStyleBackColor = false;
             // 
             // btnModifier
             // 
+            this.btnModifier.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnModifier.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModifier.ForeColor = System.Drawing.Color.White;
             this.btnModifier.Location = new System.Drawing.Point(750, 326);
             this.btnModifier.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnModifier.Name = "btnModifier";
-            this.btnModifier.Size = new System.Drawing.Size(99, 27);
+            this.btnModifier.Size = new System.Drawing.Size(99, 44);
             this.btnModifier.TabIndex = 22;
             this.btnModifier.Text = "Modifier";
-            this.btnModifier.UseVisualStyleBackColor = true;
+            this.btnModifier.UseVisualStyleBackColor = false;
             // 
             // frmRendezVous
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DimGray;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(73)))), ((int)(((byte)(101)))));
             this.ClientSize = new System.Drawing.Size(1301, 697);
             this.ControlBox = false;
             this.Controls.Add(this.btnModifier);
             this.Controls.Add(this.btnSupprimer);
-            this.Controls.Add(this.btnFermer);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.btnAgenda);
@@ -430,9 +431,10 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(73)))), ((int)(((byte)(101)))));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmRendezVous";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Rendez-Vous";
             this.Load += new System.EventHandler(this.frmRendezVous_Load);
             this.groupBox1.ResumeLayout(false);
@@ -474,14 +476,12 @@
         private System.Windows.Forms.Label lblMessage;
         private System.Windows.Forms.TextBox txtNumeroRecu;
         private System.Windows.Forms.TextBox txtCreneauSelectionne;
-        private System.Windows.Forms.Button btnPatient;
         private System.Windows.Forms.Button btnAgenda;
         private System.Windows.Forms.Label lblPatient;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label lblIdPatient;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.DataGridView dgRendezvous;
-        private System.Windows.Forms.Button btnFermer;
         private System.Windows.Forms.Button btnSupprimer;
         private System.Windows.Forms.Button btnModifier;
     }

@@ -9,10 +9,6 @@
       {
         "Path": "MetierRvMedical\\MetierRvMedical.csproj",
         "Action": "Start"
-      },
-      {
-        "Path": "APIMedicalRV\\APIMedicalRV.csproj",
-        "Action": "Start"
       }
     ]
   }

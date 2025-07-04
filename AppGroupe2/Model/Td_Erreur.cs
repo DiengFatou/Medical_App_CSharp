@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AppGroupe2.Model
+namespace MaterielRvMedical.Model
 {
     public class Td_Erreur
     {

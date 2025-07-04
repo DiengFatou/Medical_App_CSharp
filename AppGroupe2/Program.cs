@@ -1,5 +1,6 @@
 using AppGroupe2.Helper;
 using AppGroupe2.ServiceMetier;
+using AppGroupe2.View;
 using MaterielRvMedical.Model;
 using System;
 using System.Windows.Forms;
@@ -20,7 +21,7 @@ namespace AppGroupe2
             try
             {
                 InitializeAdminAccount();
-                Application.Run(new frmConnexion());
+                Application.Run(new frmMenu());
             }
             catch (Exception ex)
             {
