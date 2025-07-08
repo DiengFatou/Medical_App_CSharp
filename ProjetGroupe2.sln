@@ -10,7 +10,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppGroupe2", "AppGroupe2\Ap
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetierRvMedical", "MetierRvMedical\MetierRvMedical.csproj", "{0EEDA160-BE94-4532-AE81-59F2D8C2AB97}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIMedicalRV", "APIMedicalRV\APIMedicalRV.csproj", "{4C0BBBE9-D63B-44CD-8DDD-243C05DD74CE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebMedicalRv", "WebMedicalRv\WebMedicalRv.csproj", "{848F9F63-BF85-4898-933C-98867CBC4872}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,10 +26,10 @@ Global
 		{0EEDA160-BE94-4532-AE81-59F2D8C2AB97}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0EEDA160-BE94-4532-AE81-59F2D8C2AB97}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0EEDA160-BE94-4532-AE81-59F2D8C2AB97}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4C0BBBE9-D63B-44CD-8DDD-243C05DD74CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4C0BBBE9-D63B-44CD-8DDD-243C05DD74CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4C0BBBE9-D63B-44CD-8DDD-243C05DD74CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4C0BBBE9-D63B-44CD-8DDD-243C05DD74CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{848F9F63-BF85-4898-933C-98867CBC4872}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{848F9F63-BF85-4898-933C-98867CBC4872}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{848F9F63-BF85-4898-933C-98867CBC4872}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{848F9F63-BF85-4898-933C-98867CBC4872}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

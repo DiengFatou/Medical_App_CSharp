@@ -3,39 +3,47 @@
   "WorkspaceRootPath": "D:\\Java\\ProjetGroupe2 (2)\\ProjetGroupe2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|d:\\java\\projetgroupe2 (2)\\projetgroupe2\\appgroupe2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{848F9F63-BF85-4898-933C-98867CBC4872}|WebMedicalRv\\WebMedicalRv.csproj|d:\\java\\projetgroupe2 (2)\\projetgroupe2\\webmedicalrv\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{848F9F63-BF85-4898-933C-98867CBC4872}|WebMedicalRv\\WebMedicalRv.csproj|solutionrelative:webmedicalrv\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|d:\\java\\projetgroupe2 (2)\\projetgroupe2\\appgroupe2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|solutionrelative:appgroupe2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|D:\\Java\\ProjetGroupe2 (2)\\ProjetGroupe2\\appgroupe2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|solutionrelative:appgroupe2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|d:\\java\\projetgroupe2 (2)\\projetgroupe2\\appgroupe2\\view\\frmrendezvous.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|D:\\Java\\ProjetGroupe2 (2)\\ProjetGroupe2\\appgroupe2\\view\\frmrendezvous.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|solutionrelative:appgroupe2\\view\\frmrendezvous.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|d:\\java\\projetgroupe2 (2)\\projetgroupe2\\appgroupe2\\view\\frmagenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|D:\\Java\\ProjetGroupe2 (2)\\ProjetGroupe2\\appgroupe2\\view\\frmagenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|solutionrelative:appgroupe2\\view\\frmagenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|d:\\java\\projetgroupe2 (2)\\projetgroupe2\\appgroupe2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|D:\\Java\\ProjetGroupe2 (2)\\ProjetGroupe2\\appgroupe2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|solutionrelative:appgroupe2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|d:\\java\\projetgroupe2 (2)\\projetgroupe2\\appgroupe2\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|D:\\Java\\ProjetGroupe2 (2)\\ProjetGroupe2\\appgroupe2\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|solutionrelative:appgroupe2\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|d:\\java\\projetgroupe2 (2)\\projetgroupe2\\appgroupe2\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|D:\\Java\\ProjetGroupe2 (2)\\ProjetGroupe2\\appgroupe2\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|solutionrelative:appgroupe2\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|d:\\java\\projetgroupe2 (2)\\projetgroupe2\\appgroupe2\\view\\frmpatient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|D:\\Java\\ProjetGroupe2 (2)\\ProjetGroupe2\\appgroupe2\\view\\frmpatient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|solutionrelative:appgroupe2\\view\\frmpatient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|d:\\java\\projetgroupe2 (2)\\projetgroupe2\\appgroupe2\\view\\frmrendezvous.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|D:\\Java\\ProjetGroupe2 (2)\\ProjetGroupe2\\appgroupe2\\view\\frmrendezvous.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|solutionrelative:appgroupe2\\view\\frmrendezvous.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|d:\\java\\projetgroupe2 (2)\\projetgroupe2\\appgroupe2\\view\\frmagenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|D:\\Java\\ProjetGroupe2 (2)\\ProjetGroupe2\\appgroupe2\\view\\frmagenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|solutionrelative:appgroupe2\\view\\frmagenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -69,6 +77,36 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Web.config",
+              "DocumentMoniker": "D:\\Java\\ProjetGroupe2 (2)\\ProjetGroupe2\\WebMedicalRv\\Web.config",
+              "RelativeDocumentMoniker": "WebMedicalRv\\Web.config",
+              "ToolTip": "D:\\Java\\ProjetGroupe2 (2)\\ProjetGroupe2\\WebMedicalRv\\Web.config",
+              "RelativeToolTip": "WebMedicalRv\\Web.config",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-07-08T00:24:19.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\Java\\ProjetGroupe2 (2)\\ProjetGroupe2\\AppGroupe2\\Form1.cs",
+              "RelativeDocumentMoniker": "AppGroupe2\\Form1.cs",
+              "ToolTip": "D:\\Java\\ProjetGroupe2 (2)\\ProjetGroupe2\\AppGroupe2\\Form1.cs",
+              "RelativeToolTip": "AppGroupe2\\Form1.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAEwFcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T16:55:49.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "D:\\Java\\ProjetGroupe2 (2)\\ProjetGroupe2\\AppGroupe2\\Form1.cs",
               "RelativeDocumentMoniker": "AppGroupe2\\Form1.cs",
@@ -79,12 +117,8 @@
               "EditorCaption": " [Design]"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Java\\ProjetGroupe2 (2)\\ProjetGroupe2\\AppGroupe2\\Program.cs",
               "RelativeDocumentMoniker": "AppGroupe2\\Program.cs",
@@ -97,7 +131,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "frmMenu.cs",
               "DocumentMoniker": "D:\\Java\\ProjetGroupe2 (2)\\ProjetGroupe2\\AppGroupe2\\frmMenu.cs",
               "RelativeDocumentMoniker": "AppGroupe2\\frmMenu.cs",
@@ -110,7 +144,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "frmMenu.cs [Design]",
               "DocumentMoniker": "D:\\Java\\ProjetGroupe2 (2)\\ProjetGroupe2\\AppGroupe2\\frmMenu.cs",
               "RelativeDocumentMoniker": "AppGroupe2\\frmMenu.cs",
@@ -122,7 +156,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "frmAgenda.cs [Design]",
               "DocumentMoniker": "D:\\Java\\ProjetGroupe2 (2)\\ProjetGroupe2\\AppGroupe2\\View\\frmAgenda.cs",
               "RelativeDocumentMoniker": "AppGroupe2\\View\\frmAgenda.cs",
@@ -134,7 +168,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "frmRendezVous.cs [Design]",
               "DocumentMoniker": "D:\\Java\\ProjetGroupe2 (2)\\ProjetGroupe2\\AppGroupe2\\View\\frmRendezVous.cs",
               "RelativeDocumentMoniker": "AppGroupe2\\View\\frmRendezVous.cs",
@@ -146,7 +180,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "frmPatient.cs",
               "DocumentMoniker": "D:\\Java\\ProjetGroupe2 (2)\\ProjetGroupe2\\AppGroupe2\\View\\frmPatient.cs",
               "RelativeDocumentMoniker": "AppGroupe2\\View\\frmPatient.cs",
@@ -159,7 +193,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "frmRendezVous.cs",
               "DocumentMoniker": "D:\\Java\\ProjetGroupe2 (2)\\ProjetGroupe2\\AppGroupe2\\View\\frmRendezVous.cs",
               "RelativeDocumentMoniker": "AppGroupe2\\View\\frmRendezVous.cs",
@@ -172,7 +206,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "frmAgenda.cs",
               "DocumentMoniker": "D:\\Java\\ProjetGroupe2 (2)\\ProjetGroupe2\\AppGroupe2\\View\\frmAgenda.cs",
               "RelativeDocumentMoniker": "AppGroupe2\\View\\frmAgenda.cs",

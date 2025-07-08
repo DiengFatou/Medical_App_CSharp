@@ -3,51 +3,43 @@
   "WorkspaceRootPath": "D:\\Java\\ProjetGroupe2 (2)\\ProjetGroupe2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|d:\\java\\projetgroupe2 (2)\\projetgroupe2\\appgroupe2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|solutionrelative:appgroupe2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|d:\\java\\projetgroupe2 (2)\\projetgroupe2\\appgroupe2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|solutionrelative:appgroupe2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|d:\\java\\projetgroupe2 (2)\\projetgroupe2\\appgroupe2\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|solutionrelative:appgroupe2\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|D:\\Java\\ProjetGroupe2 (2)\\ProjetGroupe2\\appgroupe2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|solutionrelative:appgroupe2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|d:\\java\\projetgroupe2 (2)\\projetgroupe2\\appgroupe2\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|solutionrelative:appgroupe2\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|d:\\java\\projetgroupe2 (2)\\projetgroupe2\\appgroupe2\\view\\frmaccueil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|solutionrelative:appgroupe2\\view\\frmaccueil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|d:\\java\\projetgroupe2 (2)\\projetgroupe2\\appgroupe2\\view\\frmrendezvous.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|D:\\Java\\ProjetGroupe2 (2)\\ProjetGroupe2\\appgroupe2\\view\\frmrendezvous.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|solutionrelative:appgroupe2\\view\\frmrendezvous.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|d:\\java\\projetgroupe2 (2)\\projetgroupe2\\appgroupe2\\view\\frmmedecin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|solutionrelative:appgroupe2\\view\\frmmedecin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|d:\\java\\projetgroupe2 (2)\\projetgroupe2\\appgroupe2\\view\\frmagenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|D:\\Java\\ProjetGroupe2 (2)\\ProjetGroupe2\\appgroupe2\\view\\frmagenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|solutionrelative:appgroupe2\\view\\frmagenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|d:\\java\\projetgroupe2 (2)\\projetgroupe2\\appgroupe2\\view\\frmpatient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|solutionrelative:appgroupe2\\view\\frmpatient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|D:\\Java\\ProjetGroupe2 (2)\\ProjetGroupe2\\appgroupe2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|solutionrelative:appgroupe2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|d:\\java\\projetgroupe2 (2)\\projetgroupe2\\appgroupe2\\view\\frmpatient.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|solutionrelative:appgroupe2\\view\\frmpatient.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|D:\\Java\\ProjetGroupe2 (2)\\ProjetGroupe2\\appgroupe2\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|solutionrelative:appgroupe2\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|d:\\java\\projetgroupe2 (2)\\projetgroupe2\\appgroupe2\\view\\frmpatient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|D:\\Java\\ProjetGroupe2 (2)\\ProjetGroupe2\\appgroupe2\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|solutionrelative:appgroupe2\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|D:\\Java\\ProjetGroupe2 (2)\\ProjetGroupe2\\appgroupe2\\view\\frmpatient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|solutionrelative:appgroupe2\\view\\frmpatient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|d:\\java\\projetgroupe2 (2)\\projetgroupe2\\appgroupe2\\view\\frmrendezvous.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|D:\\Java\\ProjetGroupe2 (2)\\ProjetGroupe2\\appgroupe2\\view\\frmrendezvous.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|solutionrelative:appgroupe2\\view\\frmrendezvous.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|d:\\java\\projetgroupe2 (2)\\projetgroupe2\\appgroupe2\\view\\frmagenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|D:\\Java\\ProjetGroupe2 (2)\\ProjetGroupe2\\appgroupe2\\view\\frmagenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6A7BB9DB-241C-4BE4-B2BE-9DC130EB25BC}|AppGroupe2\\AppGroupe2.csproj|solutionrelative:appgroupe2\\view\\frmagenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -72,24 +64,11 @@
         },
         {
           "DockedWidth": 540,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Java\\ProjetGroupe2 (2)\\ProjetGroupe2\\AppGroupe2\\Program.cs",
-              "RelativeDocumentMoniker": "AppGroupe2\\Program.cs",
-              "ToolTip": "D:\\Java\\ProjetGroupe2 (2)\\ProjetGroupe2\\AppGroupe2\\Program.cs*",
-              "RelativeToolTip": "AppGroupe2\\Program.cs*",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T14:41:49.919Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -97,7 +76,43 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\Java\\ProjetGroupe2 (2)\\ProjetGroupe2\\AppGroupe2\\Form1.cs",
+              "RelativeDocumentMoniker": "AppGroupe2\\Form1.cs",
+              "ToolTip": "D:\\Java\\ProjetGroupe2 (2)\\ProjetGroupe2\\AppGroupe2\\Form1.cs",
+              "RelativeToolTip": "AppGroupe2\\Form1.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAEwFcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T16:55:49.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\Java\\ProjetGroupe2 (2)\\ProjetGroupe2\\AppGroupe2\\Form1.cs",
+              "RelativeDocumentMoniker": "AppGroupe2\\Form1.cs",
+              "ToolTip": "D:\\Java\\ProjetGroupe2 (2)\\ProjetGroupe2\\AppGroupe2\\Form1.cs [Design]",
+              "RelativeToolTip": "AppGroupe2\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T14:46:23.642Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Java\\ProjetGroupe2 (2)\\ProjetGroupe2\\AppGroupe2\\Program.cs",
+              "RelativeDocumentMoniker": "AppGroupe2\\Program.cs",
+              "ToolTip": "D:\\Java\\ProjetGroupe2 (2)\\ProjetGroupe2\\AppGroupe2\\Program.cs",
+              "RelativeToolTip": "AppGroupe2\\Program.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAYwBcAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T14:41:49.919Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "frmMenu.cs",
               "DocumentMoniker": "D:\\Java\\ProjetGroupe2 (2)\\ProjetGroupe2\\AppGroupe2\\frmMenu.cs",
               "RelativeDocumentMoniker": "AppGroupe2\\frmMenu.cs",
@@ -105,97 +120,44 @@
               "RelativeToolTip": "AppGroupe2\\frmMenu.cs",
               "ViewState": "AgIAADgAAAAAAAAAAAAvwFcAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T14:37:36.824Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-04T14:37:36.824Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "frmMenu.cs [Design]",
               "DocumentMoniker": "D:\\Java\\ProjetGroupe2 (2)\\ProjetGroupe2\\AppGroupe2\\frmMenu.cs",
               "RelativeDocumentMoniker": "AppGroupe2\\frmMenu.cs",
               "ToolTip": "D:\\Java\\ProjetGroupe2 (2)\\ProjetGroupe2\\AppGroupe2\\frmMenu.cs [Design]",
               "RelativeToolTip": "AppGroupe2\\frmMenu.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T14:37:32.408Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-07-04T14:37:32.408Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "frmPatient.cs [Design]",
-              "DocumentMoniker": "D:\\Java\\ProjetGroupe2 (2)\\ProjetGroupe2\\AppGroupe2\\View\\frmPatient.cs",
-              "RelativeDocumentMoniker": "AppGroupe2\\View\\frmPatient.cs",
-              "ToolTip": "D:\\Java\\ProjetGroupe2 (2)\\ProjetGroupe2\\AppGroupe2\\View\\frmPatient.cs [Design]",
-              "RelativeToolTip": "AppGroupe2\\View\\frmPatient.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T14:09:37.969Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "frmMedecin.cs [Design]",
-              "DocumentMoniker": "D:\\Java\\ProjetGroupe2 (2)\\ProjetGroupe2\\AppGroupe2\\View\\frmMedecin.cs",
-              "RelativeDocumentMoniker": "AppGroupe2\\View\\frmMedecin.cs",
-              "ToolTip": "D:\\Java\\ProjetGroupe2 (2)\\ProjetGroupe2\\AppGroupe2\\View\\frmMedecin.cs [Design]",
-              "RelativeToolTip": "AppGroupe2\\View\\frmMedecin.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T12:44:34.178Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "frmAgenda.cs [Design]",
               "DocumentMoniker": "D:\\Java\\ProjetGroupe2 (2)\\ProjetGroupe2\\AppGroupe2\\View\\frmAgenda.cs",
               "RelativeDocumentMoniker": "AppGroupe2\\View\\frmAgenda.cs",
               "ToolTip": "D:\\Java\\ProjetGroupe2 (2)\\ProjetGroupe2\\AppGroupe2\\View\\frmAgenda.cs [Design]",
               "RelativeToolTip": "AppGroupe2\\View\\frmAgenda.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T13:07:16.761Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-07-04T13:07:16.761Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "frmAccueil.cs [Design]",
-              "DocumentMoniker": "D:\\Java\\ProjetGroupe2 (2)\\ProjetGroupe2\\AppGroupe2\\View\\frmAccueil.cs",
-              "RelativeDocumentMoniker": "AppGroupe2\\View\\frmAccueil.cs",
-              "ToolTip": "D:\\Java\\ProjetGroupe2 (2)\\ProjetGroupe2\\AppGroupe2\\View\\frmAccueil.cs [Design]",
-              "RelativeToolTip": "AppGroupe2\\View\\frmAccueil.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T12:46:45.095Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "frmRendezVous.cs [Design]",
               "DocumentMoniker": "D:\\Java\\ProjetGroupe2 (2)\\ProjetGroupe2\\AppGroupe2\\View\\frmRendezVous.cs",
               "RelativeDocumentMoniker": "AppGroupe2\\View\\frmRendezVous.cs",
               "ToolTip": "D:\\Java\\ProjetGroupe2 (2)\\ProjetGroupe2\\AppGroupe2\\View\\frmRendezVous.cs [Design]",
               "RelativeToolTip": "AppGroupe2\\View\\frmRendezVous.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T13:57:56.283Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-07-04T13:57:56.283Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "frmPatient.Designer.cs",
-              "DocumentMoniker": "D:\\Java\\ProjetGroupe2 (2)\\ProjetGroupe2\\AppGroupe2\\View\\frmPatient.Designer.cs",
-              "RelativeDocumentMoniker": "AppGroupe2\\View\\frmPatient.Designer.cs",
-              "ToolTip": "D:\\Java\\ProjetGroupe2 (2)\\ProjetGroupe2\\AppGroupe2\\View\\frmPatient.Designer.cs",
-              "RelativeToolTip": "AppGroupe2\\View\\frmPatient.Designer.cs",
-              "ViewState": "AgIAAB8BAAAAAAAAAAAEwDMBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T14:18:54.624Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 7,
               "Title": "frmPatient.cs",
               "DocumentMoniker": "D:\\Java\\ProjetGroupe2 (2)\\ProjetGroupe2\\AppGroupe2\\View\\frmPatient.cs",
               "RelativeDocumentMoniker": "AppGroupe2\\View\\frmPatient.cs",
@@ -203,12 +165,11 @@
               "RelativeToolTip": "AppGroupe2\\View\\frmPatient.cs",
               "ViewState": "AgIAAG8BAAAAAAAAAAAEwIEBAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T14:15:25.609Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-04T14:15:25.609Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 8,
               "Title": "frmRendezVous.cs",
               "DocumentMoniker": "D:\\Java\\ProjetGroupe2 (2)\\ProjetGroupe2\\AppGroupe2\\View\\frmRendezVous.cs",
               "RelativeDocumentMoniker": "AppGroupe2\\View\\frmRendezVous.cs",
@@ -216,12 +177,11 @@
               "RelativeToolTip": "AppGroupe2\\View\\frmRendezVous.cs",
               "ViewState": "AgIAAMgBAAAAAAAAAAAEwNQBAABWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T13:59:31.991Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-04T13:59:31.991Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 9,
               "Title": "frmAgenda.cs",
               "DocumentMoniker": "D:\\Java\\ProjetGroupe2 (2)\\ProjetGroupe2\\AppGroupe2\\View\\frmAgenda.cs",
               "RelativeDocumentMoniker": "AppGroupe2\\View\\frmAgenda.cs",
@@ -229,8 +189,7 @@
               "RelativeToolTip": "AppGroupe2\\View\\frmAgenda.cs",
               "ViewState": "AgIAADABAAAAAAAAAAAEwEQBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T13:50:36.491Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-04T13:50:36.491Z"
             }
           ]
         }
